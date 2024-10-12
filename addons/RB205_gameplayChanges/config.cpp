@@ -12,4 +12,5 @@ class cfgPatches
 	};
 };
 
+#include "noWeaponSway.hpp"
 #include "quickJoinButton.hpp"
