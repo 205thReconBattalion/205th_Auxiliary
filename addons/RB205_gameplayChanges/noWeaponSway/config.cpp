@@ -1,3 +1,7 @@
+/*
+	Deactivates Weapon Sway
+*/
+
 class cfgPatches
 {
 	class RB205_gameplayChanges_noWeaponSway
@@ -11,10 +15,6 @@ class cfgPatches
 		weapons[] = {};
 	};
 };
-
-/*
-	Deactivates Weapon Sway
-*/
 
 class CfgImprecision
 {

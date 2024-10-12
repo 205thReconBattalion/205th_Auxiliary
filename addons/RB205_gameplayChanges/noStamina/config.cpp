@@ -1,3 +1,7 @@
+/*
+	Deactivates Stamina (vanilla and ace)
+*/
+
 class cfgPatches
 {
 	class RB205_gameplayChanges_noStamina
@@ -11,10 +15,6 @@ class cfgPatches
 		weapons[] = {};
 	};
 };
-
-/*
-	Deactivates Stamina (vanilla and ace)
-*/
 
 class Extended_PreStart_EventHandlers
 {

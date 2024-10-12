@@ -1,3 +1,7 @@
+/*
+    Adds a join button in the Arma 3 Main Menu under the section "Multiplayer"
+*/
+
 class cfgPatches
 {
 	class RB205_gameplayChanges_quickJoin
@@ -11,10 +15,6 @@ class cfgPatches
 		weapons[] = {};
 	};
 };
-
-/*
-    Adds a join button in the Arma 3 Main Menu under the section "Multiplayer"
-*/
 
 class RscControlsGroupNoScrollbars;
 class RscStandardDisplay;

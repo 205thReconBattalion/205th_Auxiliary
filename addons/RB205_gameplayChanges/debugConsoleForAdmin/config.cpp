@@ -1,3 +1,7 @@
+/*
+	Enables the debug console for logged in admins
+*/
+
 class cfgPatches
 {
 	class RB205_gameplayChanges_debugConsoleForAdmin
@@ -8,9 +12,5 @@ class cfgPatches
 		weapons[] = {};
 	};
 };
-
-/*
-	Enables the debug console for logged in admins
-*/
 
 enableDebugConsole = 1;

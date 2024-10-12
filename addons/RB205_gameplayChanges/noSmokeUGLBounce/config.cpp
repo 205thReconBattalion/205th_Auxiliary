@@ -1,3 +1,7 @@
+/*
+	Deactivates the bouncing of UGL smoke grenades
+*/
+
 class cfgPatches
 {
 	class RB205_gameplayChanges_noSmokeUGLBounce
@@ -11,10 +15,6 @@ class cfgPatches
 		weapons[] = {};
 	};
 };
-
-/*
-	Deactivates the bouncing of UGL smoke grenades
-*/
 
 class CfgAmmo
 {
