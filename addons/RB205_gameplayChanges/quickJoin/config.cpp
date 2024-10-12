@@ -1,3 +1,17 @@
+class cfgPatches
+{
+	class RB205_gameplayChanges_quickJoin
+	{
+		requiredAddons[] =
+        {
+            "A3_Ui_F"
+        };
+		requiredVersion = 1.0;
+		units[] = {};
+		weapons[] = {};
+	};
+};
+
 /*
     Adds a join button in the Arma 3 Main Menu under the section "Multiplayer"
 */
@@ -18,7 +32,7 @@ class RscDisplayMain: RscStandardDisplay
 			class Controls: Controls
 			{
 				class ServerBrowser;
-				class Join205Server_Primary: ServerBrowser //JoinDigbyServer
+				class Join205Server_Primary: ServerBrowser
 				{
 					idc=-1;
 					text="205th Recon Battalion"; // text="205th Server I";
