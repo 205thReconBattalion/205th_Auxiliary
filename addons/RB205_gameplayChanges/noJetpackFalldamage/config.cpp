@@ -8,8 +8,9 @@ class cfgPatches
 	{
 		requiredAddons[] =
         {
-            
+            "knd_gadgets_core"
         };
+        skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
 		units[] = {};
 		weapons[] = {};
