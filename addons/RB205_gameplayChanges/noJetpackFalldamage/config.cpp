@@ -8,7 +8,7 @@ class cfgPatches
 	{
 		requiredAddons[] =
         {
-            "knd_gadgets_core"
+            "jen_jetpacks_core"
         };
         skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
