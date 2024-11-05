@@ -31,12 +31,12 @@ NFD_monitor_handle = [_landingsound] spawn {
   params [["_landingSound", "A3\Sounds_F\characters\footsteps\concrete\concrete_run_hpf_1.wss"]];
   while {true} do {
     if (alive player) then {
-      if ((player getVariable ["knd_isJetpacking",false]) && (PLAYER_HEIGHT > HEIGHT_THRESHOLD) && (vehicle player isEqualTo player) && !PFD_BOOL) then {
+      if ((player getVariable ["jen_jetpacks_core_isJetpacking",false]) && (PLAYER_HEIGHT > HEIGHT_THRESHOLD) && (vehicle player isEqualTo player) && !PFD_BOOL) then {
         player setVariable ["NFD_preventfalldamage",true];
         if (DEBUG) then {systemChat "Set NFD_BOOL true"};
 
         waitUntil {PLAYER_HEIGHT < HEIGHT_THRESHOLD};
-        if (player getVariable ["knd_isJetpacking",false]) then {
+        if (player getVariable ["jen_jetpacks_core_isJetpacking",false]) then {
           player allowDamage false;
           if (DEBUG) then {systemChat "Set allowDamage false"};
         };
