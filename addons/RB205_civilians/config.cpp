@@ -33,4 +33,13 @@ class CfgEditorSubcategories
 	{
 		displayName = "Other";
 	};
+    
+	class RB205_civ_vehicles_speeder
+	{
+		displayName = "Speeder";
+	};
+	class RB205_civ_vehicles_spaceship
+	{
+		displayName = "Spaceship";
+	};
 };
