@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="205RB">
+    <Package name="205_medical">
+<!--MORPHINE-->
+        <Key ID="STR_205_Medical_Treatment_Morphine_Display">
+            <English>Nyex Injector</English>
+            <German>Nyex Injektor</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Inject_Morphine">
+            <English>Inject Nyex</English>
+            <German>Nyex injizieren</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Injecting_Morphine">
+            <English>Injecting Nyex...</English>
+            <German>Nyex injizieren...</German>
+        </Key>
+<!--EPINEPHRINE-->
+        <Key ID="STR_205_Medical_Treatment_Inject_Epinephrine">
+            <English>Inject Quickwake</English>
+            <German>Quickwake injizieren</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Epinephrine_Display">
+            <English>Quickwake Injector</English>
+            <German>Quickwake Injektor</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Injecting_Epinephrine">
+            <English>Injecting Quickwake...</English>
+            <German>Quickwake injizieren...</German>
+        </Key>
+<!--ADENOSINE-->
+        <Key ID="STR_205_Medical_Treatment_Adenosine_Display">
+            <English>Plethyl-Nitrate Injector</English>
+            <German>Plethyl-Nitrat Injektor</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Inject_Adenosine">
+            <English>Inject Plethyl-Nitrate</English>
+            <German>Plethyl-Nitrat injizieren</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Injecting_Adenosine">
+            <English>Injecting Plethyl-Nitrate...</English>
+            <German>Plethyl-Nitrat injizieren...</German>
+        </Key>
+<!--PAINKILLER-->
+        <Key ID="STR_205_Medical_Treatment_Painkiller_Display">
+            <English>Comaren</English>
+            <German>Comaren</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Administer_Painkiller">
+            <English>Administer Comaren</English>
+            <German>Comaren verabreichen</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Administering_Painkiller">
+            <English>Administering Comaren...</English>
+            <German>Comaren verabreichen...</German>
+        </Key>
+<!--BLOOD-->
+        <Key ID="STR_205_Medical_Treatment_Blood_IV">
+            <English>Blood IV (1000ml)</English>
+            <German>Blut IV (1000ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Blood_IV_500">
+            <English>Blood IV (500ml)</English>
+            <German>Blut IV (500ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Blood_IV_250">
+            <English>Blood IV (250ml)</English>
+            <German>Blut IV (250ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Actions_Blood4_1000">
+            <English>Give Blood IV (1000ml)</English>
+            <German>Bluttransfusion IV (1000ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Actions_Blood4_500">
+            <English>Give Blood IV (500ml)</English>
+            <German>Bluttransfusion IV (500ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Actions_Blood4_250">
+            <English>Give Blood IV (250ml)</English>
+            <German>Bluttransfusion IV (250ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Transfuse_Blood">
+            <English>Transfuse Blood</English>
+            <German>Bluttransfusion</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Transfusing_Blood">
+            <English>Transfusing Blood...</English>
+            <German>Bluttransfusion...</German>
+        </Key>
+<!--PLASMA-->
+        <Key ID="STR_205_Medical_Treatment_Plasma_IV">
+            <English>Kolto IV (1000ml)</English>
+            <German>Kolto IV (1000ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Plasma_IV_500">
+            <English>Kolto IV (500ml)</English>
+            <German>Kolto IV (500ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Plasma_IV_250">
+            <English>Kolto IV (250ml)</English>
+            <German>Kolto IV (250ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Actions_Plasma4_1000">
+            <English>Give Kolto IV (1000ml)</English>
+            <German>Kolto-Transfusion IV (1000ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Actions_Plasma4_500">
+            <English>Give Kolto IV (500ml)</English>
+            <German>Kolto-Transfusion IV (500ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Actions_Plasma4_250">
+            <English>Give Kolto IV (250ml)</English>
+            <German>Kolto-Transfusion IV (250ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Transfuse_Plasma">
+            <English>Transfuse Kolto</English>
+            <German>Kolto-Transfusion</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Transfusing_Plasma">
+            <English>Transfusing Kolto...</English>
+            <German>Kolto-Transfusion...</German>
+        </Key>
+<!--SALINE-->
+        <Key ID="STR_205_Medical_Treatment_Saline_IV">
+            <English>Bacta IV (1000ml)</English>
+            <German>Bacta IV (1000ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Saline_IV_500">
+            <English>Bacta IV (500ml)</English>
+            <German>Bacta IV (500ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Saline_IV_250">
+            <English>Bacta IV (250ml)</English>
+            <German>Bacta IV (250ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Actions_Saline4_1000">
+            <English>Give Bacta IV (1000ml)</English>
+            <German>Bacta-Transfusion IV (1000ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Actions_Saline4_500">
+            <English>Give Bacta IV (500ml)</English>
+            <German>Bacta-Transfusion IV (500ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Actions_Saline4_250">
+            <English>Give Bacta IV (250ml)</English>
+            <German>Bacta-Transfusion IV (250ml)</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Transfuse_Saline">
+            <English>Transfuse Bacta</English>
+            <German>Bacta-Transfusion</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Transfusing_Saline">
+            <English>Transfusing Bacta...</English>
+            <German>Bacta-Transfusion...</German>
+        </Key>
+<!--BANDAGES-->
+        <Key ID="STR_205_Medical_Treatment_Bandage_Basic_Display">
+            <English>Medical Tape</English>
+            <German>Medizinisches Klebeband</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Packing_Bandage_Display">
+            <English>Bacta Bandage</English>
+            <German>Bacta Bandage</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Bandage_Elastic_Display">
+            <English>Spray Bandage</English>
+            <German>Sprüh-Bandage</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_QuikClot_Display">
+            <English>Dermaseal</English>
+            <German>Dermaseal</German>
+        </Key>
+<!--SURGICAL KIT-->
+        <Key ID="STR_205_Medical_Treatment_SurgicalKit_Display">
+            <English>Medpac</English>
+            <German>Medpac</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Use_SurgicalKit">
+            <English>Use Medpac</English>
+            <German>Medpac benutzen</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Stitching">
+            <English>Stitching...</English>
+            <German>Nähen...</German>
+        </Key>
+<!--AID KIT-->
+        <Key ID="STR_205_Medical_Treatment_Aid_Kit_Display">
+            <English>Advanced Medpac</English>
+            <German>Erweitertes Medpac</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_Use_Aid_Kit">
+            <English>Use Advanced Medpac</English>
+            <German>Erweitertes Medpac benutzen</German>
+        </Key>
+        <Key ID="STR_205_Medical_Treatment_TreatmentAction">
+            <English>Treating...</English>
+            <German>Behandeln...</German>
+        </Key>
+    </Package>
+</Project>
