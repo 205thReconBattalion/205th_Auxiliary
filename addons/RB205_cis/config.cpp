@@ -50,6 +50,7 @@ class CfgWeapons
 		};
 	};
 };
+
 class CfgVehicles
 {
     class Weapon_Base_F;
@@ -68,5 +69,15 @@ class CfgVehicles
 				name = "RB205_tseries_head";
 			};
 		};
+	};
+};
+
+class CfgFactionClasses
+{
+	class RB205_cis
+	{
+		displayName = "[205] Confederacy of Independent Systems";
+		priority = 999;
+		side = 0;
 	};
 };

@@ -235,9 +235,9 @@ class CfgWeapons
         baseWeapon = "RB205_E60R";
         magazines[] =
         {
-            "RB205_E50R_AT_mag",
-            "RB205_E50R_AP_mag",
-            "RB205_E50R_AA_mag"
+            "RB205_E60R_AT_mag",
+            "RB205_E60R_AP_mag",
+            "RB205_E60R_AA_mag"
         };
     };
 };
@@ -285,26 +285,26 @@ class CfgMagazines
     };
 
     class JLTS_E60R_AT_mag;
-    class RB205_E50R_AT_mag: JLTS_E60R_AT_mag
+    class RB205_E60R_AT_mag: JLTS_E60R_AT_mag
     {
         displayName = "E-60R AT Missile";
-        ammo = "RB205_E50R_AT_ammo";
+        ammo = "RB205_E60R_AT_ammo";
     };
 
     class JLTS_E60R_AP_mag;
-    class RB205_E50R_AP_mag: JLTS_E60R_AP_mag
+    class RB205_E60R_AP_mag: JLTS_E60R_AP_mag
     {
         displayName = "E-60R AP Missile";
-        ammo = "RB205_E50R_AP_ammo";
+        ammo = "RB205_E60R_AP_ammo";
     };
 
     class Titan_AA;
-    class RB205_E50R_AA_mag: Titan_AA
+    class RB205_E60R_AA_mag: Titan_AA
     {
         displayName = "E-60R AA Missile";
         displayNameShort = "AA";
         descriptionShort = "Type: Anti-Air<br/>Rounds: 1<br/>Used in: E-60R";
-        ammo = "RB205_E50R_AA_ammo";
+        ammo = "RB205_E60R_AA_ammo";
     };
 };
 
@@ -360,7 +360,7 @@ class CfgAmmo
     //-> Aux501_Patch_e60r
 
     class ACE_Javelin_FGM148;
-    class RB205_E50R_AT_ammo: ACE_Javelin_FGM148
+    class RB205_E60R_AT_ammo: ACE_Javelin_FGM148
     {
         effectsMissile = "RB205_particle_effect_E60R_fly";
         soundFly[]=
@@ -373,7 +373,7 @@ class CfgAmmo
     };
 
     class M_Titan_AP;
-    class RB205_E50R_AP_ammo: M_Titan_AP
+    class RB205_E60R_AP_ammo: M_Titan_AP
     {
         effectsMissile = "RB205_particle_effect_E60R_fly";
         soundFly[]=
@@ -386,7 +386,7 @@ class CfgAmmo
     };
 
     class M_Titan_AA;
-    class RB205_E50R_AA_ammo: M_Titan_AA
+    class RB205_E60R_AA_ammo: M_Titan_AA
     {
         effectsMissile = "RB205_particle_effect_E60R_fly";
         soundFly[]=
