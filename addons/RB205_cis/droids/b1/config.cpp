@@ -74,6 +74,10 @@ class CfgVehicles
 		respawnlinkedItems[]=   { JLTS_NVG_droid_chip_1, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
 		items[]=            {};
 		respawnItems[]=     {};
+		canBleed = 0;
+		impactEffectsBlood = "ImpactMetal";
+		impactEffectsNoBlood = "ImpactPlastic";
+		DROID_SOUNDS
 	};
 	class RB205_B1_heavy: RB205_B1
 	{
@@ -91,8 +95,8 @@ class CfgVehicles
 		backpack = "";
 		weapons[]=          { WEAPON_E5S, Throw, Put };
 		respawnWeapons[]=   { WEAPON_E5S, Throw, Put };
-		magazines[]=        { MAG_11(MAG_E5S) };
-		respawnMagazines[]= { MAG_11(MAG_E5S) };
+		magazines[]=        { MAG_10(MAG_E5S) };
+		respawnMagazines[]= { MAG_10(MAG_E5S) };
 	};
 	class RB205_B1_at: RB205_B1
 	{
@@ -198,7 +202,7 @@ class CfgWeapons
 	};
 	class RB205_U_B1_firefighter: JLTS_DroidB1
 	{
-		displayName="Battle droid (firefighter)";
+		displayName = "Battle droid (firefighter)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass = "RB205_B1_firefighter";

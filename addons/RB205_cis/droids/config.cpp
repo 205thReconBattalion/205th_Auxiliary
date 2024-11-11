@@ -73,7 +73,11 @@ class CfgEditorSubcategories
 	{
 		displayName = "BX Commando Droids"; //BX Kommandodroiden
 	};
-	class RB205_cis_t
+	class RB205_cis_bx_training
+	{
+		displayName = "BX Commando Droids (Training)"; //BX Kommandodroiden
+	};
+	class RB205_cis_ts
 	{
 		displayName = "T-Series Tactical Droids"; //Taktikdroiden
 	};

@@ -54,3 +54,78 @@
 #define MAG_AP 		RB205_E60R_AP_mag
 
 #define GRENADE 	3AS_ThermalDetonator
+
+//macro for droid footsteps
+#define DROID_SOUNDS \
+class SoundEnvironExt \
+{ \
+	generic[] = \
+	{ \
+		{"run", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 30}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 45}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 45}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 45}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 45}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}} \
+	}; \
+}; \
+class SoundEquipment \
+{ \
+	soldier[] = \
+	{ \
+		{"run", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 30}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 45}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 45}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 45}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 45}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}} \
+	}; \
+}; \
+class SoundBreath \
+{ \
+	breath[] = {}; \
+}; \
+class SoundDrown \
+{ \
+	breath[] = {}; \
+}; \
+class SoundInjured \
+{ \
+	breath[] = {}; \
+}; \
+class SoundBleeding \
+{ \
+	breath[] = {}; \
+}; \
+class SoundBurning \
+{ \
+	breath[] = {}; \
+}; \
+class SoundChoke \
+{ \
+	breath[] = {}; \
+}; \
+class SoundRecovered \
+{ \
+	breath[] = {}; \
+};

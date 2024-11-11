@@ -128,6 +128,14 @@ class CfgWeapons
                 compatibleItems[] = {"JLTS_riot_shield_droid_attachment"};
             };
         };
+        class LinkedItems
+		{
+			class LinkedItemsUnderBarrel
+			{
+				item = "JLTS_riot_shield_droid_attachment";
+				slot = "UnderBarrelSlot";
+			};
+		};
     };
     FRIED_WEAPON(RB205_E5_commando_shield,"\MRC\JLTS\weapons\E5\data\ui\E5_fried_ui_ca.paa")
 
