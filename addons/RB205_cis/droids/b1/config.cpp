@@ -6,7 +6,8 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_cis_droids",
-            "JLTS_characters_DroidArmor"
+            "JLTS_characters_DroidArmor",
+			"JLTS_weapons_Statics_generator"
 		};
 		requiredVersion = 1.0;
 		units[] =

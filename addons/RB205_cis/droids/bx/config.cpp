@@ -21,13 +21,17 @@ class cfgPatches
 			"RB205_BX_captain",
 			"RB205_BX_security",
 			"RB205_B1_diplomat",
+			"RB205_BX_melee",
+			"RB205_BX_captain_melee",
 
 			"RB205_BX_training",
 			"RB205_BX_heavy_training",
 			"RB205_BX_sniper_training",
 			"RB205_BX_at_training",
 			"RB205_BX_aa_training",
-			"RB205_BX_shield_training"
+			"RB205_BX_ap_training",
+			"RB205_BX_shield_training",
+			"RB205_BX_melee_training",
 		};
 		weapons[] =
         {
@@ -138,6 +142,36 @@ class CfgVehicles
 		uniformClass = "lsd_cis_bxDiplomatDroid_uniform";
 	};
 
+	class WBK_BX_Assasin_1;
+	class RB205_BX_melee: WBK_BX_Assasin_1
+	{
+		displayName = "BX Commando Droid (Melee)";
+		ICON_DEFAULT
+		uniformClass = "lsd_cis_bxDroid_uniform";
+		backpack = "";
+		weapons[]=          { WEAPON_E5X, WBK_Dutch_Vibro, Throw, Put };
+		respawnWeapons[]=   { WEAPON_E5X, WBK_Dutch_Vibro, Throw, Put };
+		magazines[]=        { MAG_8(MAG_E5X), WBK_Cybercrystal };
+		respawnMagazines[]= { MAG_8(MAG_E5X), WBK_Cybercrystal };
+
+		faction = "RB205_cis";
+		editorSubcategory = "RB205_cis_bx";
+		linkedItems[]=          { RB205_V_BX, JLTS_NVG_droid_chip_2, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
+		respawnlinkedItems[]=   { RB205_V_BX, JLTS_NVG_droid_chip_2, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
+		items[]=            {};
+		respawnItems[]=     {};
+		canBleed = 0;
+		impactEffectsBlood = "ImpactMetal";
+		impactEffectsNoBlood = "ImpactPlastic";
+		DROID_SOUNDS
+	};
+	class RB205_BX_captain_melee: RB205_BX_melee
+	{
+		displayName = "BX Commando Droid [Captain] (Melee)";
+		ICON_OFFICER
+		uniformClass = "lsd_cis_bxCaptainDroid_uniform";
+	};
+
 	/****************
 		BACKPACKS
 	****************/
@@ -183,7 +217,7 @@ class CfgVehicles
 		};
 	};
 
-	//#include "training.hpp"
+	#include "training.hpp"
 };
 
 class CfgWeapons

@@ -55,7 +55,7 @@
 
 #define GRENADE 	3AS_ThermalDetonator
 
-//macro for droid footsteps
+//macros for droid footsteps
 #define DROID_SOUNDS \
 class SoundEnvironExt \
 { \
@@ -99,6 +99,68 @@ class SoundEquipment \
 		{"Tactical", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}}, \
 		{"Tactical", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}}, \
 		{"Tactical", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}} \
+	}; \
+}; \
+class SoundBreath \
+{ \
+	breath[] = {}; \
+}; \
+class SoundDrown \
+{ \
+	breath[] = {}; \
+}; \
+class SoundInjured \
+{ \
+	breath[] = {}; \
+}; \
+class SoundBleeding \
+{ \
+	breath[] = {}; \
+}; \
+class SoundBurning \
+{ \
+	breath[] = {}; \
+}; \
+class SoundChoke \
+{ \
+	breath[] = {}; \
+}; \
+class SoundRecovered \
+{ \
+	breath[] = {}; \
+};
+
+#define DROID_SOUNDS_B2 \
+class SoundEnvironExt { \
+	generic[] = { \
+		{"walk", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}} \
+	}; \
+}; \
+class SoundEquipment { \
+	soldier[] = { \
+		{"walk", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
+		{"walk", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
+		{"run", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
+		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
+		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}} \
 	}; \
 }; \
 class SoundBreath \
