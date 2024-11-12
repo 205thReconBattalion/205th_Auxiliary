@@ -180,7 +180,7 @@ class CfgVehicles
 	class RB205_B_BX: JLTS_B1_backpack
 	{
 		displayName = "Commando droid backpack";
-		model = "RB205_cis\droid\data\inv_backpack.p3d";
+		model = "RB205_cis\droids\data\inv_backpack.p3d";
 		maximumLoad = 500;
 		mass = 0;
 		scope = 2;

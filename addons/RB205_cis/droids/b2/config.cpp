@@ -85,6 +85,6 @@ class CfgVehicles
 	class RB205_B2_jetpack: JLTS_B1_jetpack
 	{
 		displayName = "Super battle droid jetpack";
-		model = "RB205_cis\droid\data\inv_backpack.p3d";
+		model = "RB205_cis\droids\data\inv_backpack.p3d";
 	};
 };

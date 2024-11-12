@@ -6,45 +6,14 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_cis"
-            //JLTS_Droid_B1_E5
 		};
 		requiredVersion = 1.0;
-		units[] =
-		{
-			
-		};
-		weapons[] =
-        {
-            
-        };
+		units[] = {};
+		weapons[] = {};
 	};
 };
 
 #include "macros.hpp"
-
-class CfgVehicles
-{
-    
-};
-
-/*class CfgWeapons
-{
-    #include "cfgWeapons.hpp"
-
-    class ls_redforVest_base;
-    class ls_cis_bxCommando_vest: ls_redforVest_base
-    {
-        class ItemInfo;
-    };
-    class 205_V_B1_aqua: ls_cis_bxCommando_vest
-	{
-		displayName = "B1 Battle Droid (Water Resistant Coating)"; //B1 Kampfroide (Wasserabweisende Beschichtung)
-		class ItemInfo: ItemInfo
-		{
-            vestType = "Rebreather";
-		};
-	};
-};*/
 
 /*class CfgGroups
 {
