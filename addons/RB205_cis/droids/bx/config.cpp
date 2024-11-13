@@ -20,7 +20,7 @@ class cfgPatches
 			"RB205_BX_shield",
 			"RB205_BX_captain",
 			"RB205_BX_security",
-			"RB205_B1_diplomat",
+			"RB205_BX_diplomat",
 			"RB205_BX_melee",
 			"RB205_BX_captain_melee",
 
@@ -35,7 +35,13 @@ class cfgPatches
 		};
 		weapons[] =
         {
-            "RB205_V_BX"
+            "RB205_V_BX",
+
+			"RB205_U_BX",
+			"RB205_U_BX_captain",
+			"RB205_U_BX_security",
+			"RB205_U_BX_diplomant",
+			"RB205_U_BX_training"
         };
 	};
 };
@@ -50,17 +56,18 @@ class CfgVehicles
 	{
 		displayName = "BX Commando Droid";
 		ICON_DEFAULT
-		uniformClass = "lsd_cis_bxDroid_uniform";
 		backpack = "";
-		weapons[]=          { WEAPON_E5X, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5X, Throw, Put };
+		weapons[]=          { WEAPON_E5X, BINO_BX, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5X, BINO_BX, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5X) };
 		respawnMagazines[]= { MAG_8(MAG_E5X) };
 
+		uniformClass = "RB205_U_BX";
+		hiddenSelectionsTextures[] = {"ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
 		faction = "RB205_cis";
 		editorSubcategory = "RB205_cis_bx";
-		linkedItems[]=          { RB205_V_BX, JLTS_NVG_droid_chip_2, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
-		respawnlinkedItems[]=   { RB205_V_BX, JLTS_NVG_droid_chip_2, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
+		linkedItems[]=          { "RB205_V_BX", "JLTS_NVG_droid_chip_2", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
+		respawnlinkedItems[]=   { "RB205_V_BX", "JLTS_NVG_droid_chip_2", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
 		items[]=            {};
 		respawnItems[]=     {};
 		canBleed = 0;
@@ -72,8 +79,8 @@ class CfgVehicles
 	{
 		displayName = "BX Commando Droid (Heavy)";
 		ICON_HEAVY
-		weapons[]=          { WEAPON_E5C, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5C, Throw, Put };
+		weapons[]=          { WEAPON_E5C, BINO_BX, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5C, BINO_BX, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5C), GRENADE };
 		respawnMagazines[]= { MAG_8(MAG_E5C), GRENADE };
 	};
@@ -81,8 +88,8 @@ class CfgVehicles
 	{
 		displayName = "BX Commando Droid (Sniper)";
 		ICON_SNIPER
-		weapons[]=          { WEAPON_E5S, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5S, Throw, Put };
+		weapons[]=          { WEAPON_E5S, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5S, "Throw", "Put" };
 		magazines[]=        { MAG_10(MAG_E5S) };
 		respawnMagazines[]= { MAG_10(MAG_E5S) };
 	};
@@ -91,8 +98,8 @@ class CfgVehicles
 		displayName = "BX Commando Droid (Anti Tank)";
 		ICON_AT
 		backpack = "RB205_B_BX_predefAT";
-		weapons[]=          { WEAPON_E5X, WEAPON_AT, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5X, WEAPON_AT, Throw, Put };
+		weapons[]=          { WEAPON_E5X, WEAPON_AT, BINO_BX, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5X, WEAPON_AT, BINO_BX, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5X), MAG_AT };
 		respawnMagazines[]= { MAG_8(MAG_E5X), MAG_AT };
 	};
@@ -101,8 +108,8 @@ class CfgVehicles
 		displayName = "BX Commando Droid (Anti Air)";
 		ICON_AT
 		backpack = "RB205_B_BX_predefAA";
-		weapons[]=          { WEAPON_E5X, WEAPON_AA, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5X, WEAPON_AA, Throw, Put };
+		weapons[]=          { WEAPON_E5X, WEAPON_AA, BINO_BX, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5X, WEAPON_AA, BINO_BX, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5X), MAG_AA };
 		respawnMagazines[]= { MAG_8(MAG_E5X), MAG_AA };
 	};
@@ -111,16 +118,16 @@ class CfgVehicles
 		displayName = "BX Commando Droid (Anti Person)";
 		ICON_AT
 		backpack = "RB205_B_BX_predefAP";
-		weapons[]=          { WEAPON_E5X, WEAPON_AT, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5X, WEAPON_AT, Throw, Put };
+		weapons[]=          { WEAPON_E5X, WEAPON_AT, BINO_BX, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5X, WEAPON_AT, BINO_BX, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5X), MAG_AP };
 		respawnMagazines[]= { MAG_8(MAG_E5X), MAG_AP };
 	};
 	class RB205_BX_shield: RB205_BX
 	{
 		displayName = "BX Commando Droid (Shield)";
-		weapons[]=          { WEAPON_E5X_SHIELD, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5X_SHIELD, Throw, Put };
+		weapons[]=          { WEAPON_E5X_SHIELD, BINO_BX, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5X_SHIELD, BINO_BX, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5X) };
 		respawnMagazines[]= { MAG_8(MAG_E5X) };
 	};
@@ -129,17 +136,20 @@ class CfgVehicles
 	{
 		displayName = "BX Commando Droid [Captain]";
 		ICON_OFFICER
-		uniformClass = "lsd_cis_bxCaptainDroid_uniform";
+		uniformClass = "RB205_U_BX_captain";
+		hiddenSelectionsTextures[] = {"lsd_units_redfor\cis\specops\textures\bx_captain_co.paa"};
 	};
 	class RB205_BX_security: RB205_BX
 	{
 		displayName = "BX Commando Droid [Security]";
-		uniformClass = "lsd_cis_bxSecurityDroid_uniform";
+		uniformClass = "RB205_U_BX_security";
+		hiddenSelectionsTextures[] = {"lsd_units_redfor\cis\specops\textures\bx_security_co.paa"};
 	};
 	class RB205_BX_diplomat: RB205_BX
 	{
 		displayName = "BX Commando Droid [Diplomat]";
-		uniformClass = "lsd_cis_bxDiplomatDroid_uniform";
+		uniformClass = "RB205_U_BX_diplomant";
+		hiddenSelectionsTextures[] = {"lsd_units_redfor\cis\specops\textures\bx_diplomat_co.paa"};
 	};
 
 	class WBK_BX_Assasin_1;
@@ -147,17 +157,17 @@ class CfgVehicles
 	{
 		displayName = "BX Commando Droid (Melee)";
 		ICON_DEFAULT
-		uniformClass = "lsd_cis_bxDroid_uniform";
 		backpack = "";
-		weapons[]=          { WEAPON_E5X, WBK_Dutch_Vibro, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5X, WBK_Dutch_Vibro, Throw, Put };
+		weapons[]=          { WEAPON_E5X, WBK_Dutch_Vibro, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5X, WBK_Dutch_Vibro, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5X), WBK_Cybercrystal };
 		respawnMagazines[]= { MAG_8(MAG_E5X), WBK_Cybercrystal };
 
+		uniformClass = "RB205_U_BX";
 		faction = "RB205_cis";
 		editorSubcategory = "RB205_cis_bx";
-		linkedItems[]=          { RB205_V_BX, JLTS_NVG_droid_chip_2, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
-		respawnlinkedItems[]=   { RB205_V_BX, JLTS_NVG_droid_chip_2, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
+		linkedItems[]=          { "RB205_V_BX", "JLTS_NVG_droid_chip_2", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
+		respawnlinkedItems[]=   { "RB205_V_BX", "JLTS_NVG_droid_chip_2", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
 		items[]=            {};
 		respawnItems[]=     {};
 		canBleed = 0;
@@ -169,7 +179,7 @@ class CfgVehicles
 	{
 		displayName = "BX Commando Droid [Captain] (Melee)";
 		ICON_OFFICER
-		uniformClass = "lsd_cis_bxCaptainDroid_uniform";
+		uniformClass = "RB205_U_BX_captain";
 	};
 
 	/****************
@@ -197,7 +207,7 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-			MAG_XX(MAG_AT,4)
+			MAG_XX(MAG_TP_AT,4)
 		};
 	};
 	class RB205_B_BX_predefAA: RB205_B_BX
@@ -205,7 +215,7 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-			MAG_XX(MAG_AA,4)
+			MAG_XX(MAG_TP_AA,4)
 		};
 	};
 	class RB205_B_BX_predefAP: RB205_B_BX
@@ -213,7 +223,7 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-			MAG_XX(MAG_AP,4)
+			MAG_XX(MAG_TP_AP,4)
 		};
 	};
 
@@ -229,7 +239,7 @@ class CfgWeapons
 	};
 	class RB205_V_BX: ls_cis_bxCommando_vest
 	{
-		displayName = "BX Commando Droid Plating";
+		displayName = "[CIS] BX Commando Droid Plating";
 		class ItemInfo: ItemInfo
 		{
 			vestType = "Rebreather";
@@ -254,6 +264,56 @@ class CfgWeapons
                     passThrough=0.3;
                 };
             };
+		};
+	};
+
+	class ls_redforUniform_base;
+	class lsd_cis_bxDroid_uniform: ls_redforUniform_base
+	{
+		class ItemInfo;
+	};
+	class RB205_U_BX: lsd_cis_bxDroid_uniform
+	{
+		displayName = "[CIS] BX Commando Droid";
+		picture = "\RB205_cis\droids\data\bx_droid.paa";
+		JLTS_isDroid =  1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_deathSounds = "DeathDroid";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "RB205_BX";
+		};
+	};
+	class RB205_U_BX_captain: RB205_U_BX
+	{
+		displayName = "[CIS] BX Commando Droid (Captain)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "RB205_U_BX_captain";
+		};
+	};
+	class RB205_U_BX_security: RB205_U_BX
+	{
+		displayName = "[CIS] BX Commando Droid (Security)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "RB205_BX_security";
+		};
+	};
+	class RB205_U_BX_diplomant: RB205_U_BX
+	{
+		displayName = "[CIS] BX Commando Droid (Diplomat)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "RB205_BX_diplomat";
+		};
+	};
+	class RB205_U_BX_training: RB205_U_BX
+	{
+		displayName = "[CIS] BX Commando Droid (Training)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "RB205_BX_training";
 		};
 	};
 };

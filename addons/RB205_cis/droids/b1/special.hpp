@@ -12,6 +12,8 @@ class RB205_B1_prototype: RB205_B1
 	displayName = "B1 Battle Droid [Prototype]";
 	uniformClass = "JLTS_DroidB1_Prototype";
 	backpack = "RB205_B_B1_prototype";
+	magazines[]=        { MAG_8(MAG_E5), "ShieldGrenadePersonal_Mag" };
+	respawnMagazines[]= { MAG_8(MAG_E5), "ShieldGrenadePersonal_Mag" };
 	SUBCATEGORY_SPECIAL
 };
 class RB205_B1_firefighter: RB205_B1
@@ -23,8 +25,8 @@ class RB205_B1_firefighter: RB205_B1
 		"\RB205_cis\droids\b1\data\b1_firefighter.paa"
 	};
 	backpack = "RB205_B_B1_firefighter";
-	weapons[]=          { Throw, Put };
-	respawnWeapons[]=   { Throw, Put };
+	weapons[]=          { "Throw", "Put" };
+	respawnWeapons[]=   { "Throw", "Put" };
 	magazines[]=        {};
 	respawnMagazines[]= {};
 	SUBCATEGORY_SPECIAL

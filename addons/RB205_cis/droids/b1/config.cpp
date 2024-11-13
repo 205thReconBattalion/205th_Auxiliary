@@ -64,15 +64,15 @@ class CfgVehicles
 		ICON_DEFAULT
 		uniformClass = "JLTS_DroidB1";
 		backpack = "JLTS_B1_backpack";
-		weapons[]=          { WEAPON_E5, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5, Throw, Put };
+		weapons[]=          { WEAPON_E5, BINO, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5, BINO, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5) };
 		respawnMagazines[]= { MAG_8(MAG_E5) };
 		
 		faction = "RB205_cis";
 		editorSubcategory = "RB205_cis_b1";
-		linkedItems[]=          { JLTS_NVG_droid_chip_1, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
-		respawnlinkedItems[]=   { JLTS_NVG_droid_chip_1, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
+		linkedItems[]=          { "JLTS_NVG_droid_chip_1", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
+		respawnlinkedItems[]=   { "JLTS_NVG_droid_chip_1", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
 		items[]=            {};
 		respawnItems[]=     {};
 		canBleed = 0;
@@ -84,8 +84,8 @@ class CfgVehicles
 	{
 		displayName = "B1 Battle Droid (Heavy)";
 		ICON_HEAVY
-		weapons[]=          { WEAPON_E5C, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5C, Throw, Put };
+		weapons[]=          { WEAPON_E5C, BINO, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5C, BINO, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5C), GRENADE };
 		respawnMagazines[]= { MAG_8(MAG_E5C), GRENADE };
 	};
@@ -94,8 +94,8 @@ class CfgVehicles
 		displayName = "B1 Battle Droid (Sniper)";
 		ICON_SNIPER
 		backpack = "";
-		weapons[]=          { WEAPON_E5S, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5S, Throw, Put };
+		weapons[]=          { WEAPON_E5S, BINO, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5S, BINO, "Throw", "Put" };
 		magazines[]=        { MAG_10(MAG_E5S) };
 		respawnMagazines[]= { MAG_10(MAG_E5S) };
 	};
@@ -104,8 +104,8 @@ class CfgVehicles
 		displayName = "B1 Battle Droid (Anti Tank)";
 		ICON_AT
 		backpack = "RB205_B_B1_predefAT";
-		weapons[]=          { WEAPON_E5, WEAPON_AT, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5, WEAPON_AT, Throw, Put };
+		weapons[]=          { WEAPON_E5, WEAPON_AT, BINO, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5, WEAPON_AT, BINO, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5), MAG_AT };
 		respawnMagazines[]= { MAG_8(MAG_E5), MAG_AT };
 	};
@@ -114,8 +114,8 @@ class CfgVehicles
 		displayName = "B1 Battle Droid (Anti Air)";
 		ICON_AT
 		backpack = "RB205_B_B1_predefAA";
-		weapons[]=          { WEAPON_E5, WEAPON_AA, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5, WEAPON_AA, Throw, Put };
+		weapons[]=          { WEAPON_E5, WEAPON_AA, BINO, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5, WEAPON_AA, BINO, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5), MAG_AA };
 		respawnMagazines[]= { MAG_8(MAG_E5), MAG_AA };
 	};
@@ -169,7 +169,7 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-			MAG_XX(MAG_AT,4)
+			MAG_XX(MAG_TP_AT,2)
 		};
 	};
 	class RB205_B_B1_predefAA: JLTS_B1_backpack
@@ -177,7 +177,7 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-			MAG_XX(MAG_AA,4)
+			MAG_XX(MAG_TP_AA,2)
 		};
 	};
 	class RB205_B_B1_predefAP: JLTS_B1_backpack
@@ -185,7 +185,7 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-			MAG_XX(MAG_AP,4)
+			MAG_XX(MAG_TP_AP,2)
 		};
 	};
 

@@ -27,33 +27,39 @@
 #define ITEM_XX(a,b) class _xx_##a {name = a;     count = b;}
 
 //macros for weapons and magazines
-#define WEAPON_E5 	RB205_E5
-#define MAG_E5 		RB205_E5_mag
+#define WEAPON_E5 	"RB205_E5"
+#define MAG_E5 		"RB205_E5_mag"
 
-#define WEAPON_E5X 	RB205_E5_commando
-#define WEAPON_E5X_SHIELD RB205_E5_commando_shield
-#define MAG_E5X 	RB205_E5_commando_mag
+#define WEAPON_E5X 	"RB205_E5_commando"
+#define WEAPON_E5X_SHIELD "RB205_E5_commando_shield"
+#define MAG_E5X 	"RB205_E5_commando_mag"
 
-#define WEAPON_E5C 	RB205_E5C
-#define WEAPON_E5C_STOCK RB205_E5C_stock
-#define MAG_E5C 	RB205_E5C_mag
+#define WEAPON_E5C 	"RB205_E5C"
+#define WEAPON_E5C_STOCK "RB205_E5C_stock"
+#define MAG_E5C 	"RB205_E5C_mag"
 
-#define WEAPON_E5S 	RB205_E5S
-#define MAG_E5S 	RB205_E5S_mag
+#define WEAPON_E5S 	"RB205_E5S"
+#define MAG_E5S 	"RB205_E5S_mag"
 
-#define WEAPON_B2 	RB205_B2_wristBlaster
-#define MAG_B2 		RB205_B2_mag
+#define WEAPON_B2 	"RB205_B2_wristBlaster"
+#define MAG_B2 		"RB205_B2_mag"
 
-#define WEAPON_RG4D RB205_RG4D
-#define MAG_RG4D	RB205_RG4D_mag
+#define WEAPON_RG4D "RB205_RG4D"
+#define MAG_RG4D	"RB205_RG4D_mag"
 
-#define WEAPON_AT	RB205_E60R
-#define WEAPON_AA	RB205_E60R
-#define MAG_AT 		RB205_E60R_AT_mag
-#define MAG_AA 		RB205_E60R_AA_mag
-#define MAG_AP 		RB205_E60R_AP_mag
+#define WEAPON_AT	"RB205_E60R"
+#define WEAPON_AA	"RB205_E60R"
+#define MAG_AT 		"RB205_E60R_AT_mag"
+#define MAG_AA 		"RB205_E60R_AA_mag"
+#define MAG_AP 		"RB205_E60R_AP_mag"
+#define MAG_TP_AT 	RB205_E60R_AT_mag
+#define MAG_TP_AA 	RB205_E60R_AA_mag
+#define MAG_TP_AP 	RB205_E60R_AP_mag
 
-#define GRENADE 	3AS_ThermalDetonator
+#define GRENADE 	"3AS_ThermalDetonator"
+
+#define BINO		"JLTS_DroidBinocular"
+#define BINO_BX		"SWLB_clone_commander_binocular_night"
 
 //macros for droid footsteps
 #define DROID_SOUNDS \

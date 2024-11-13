@@ -107,33 +107,33 @@ _spawn = _position;
 _side = (_dropside select 0);
 _list = [
 	[ //B1
-		"205_B1",
-		"205_B1_commander",
-		"205_B1_heavy",
-		"205_B1_at",
-		"205_B1_aa",
-		"205_B1_sniper"
+		"RB205_B1",
+		"RB205_B1_commander",
+		"RB205_B1_heavy",
+		"RB205_B1_at",
+		"RB205_B1_aa",
+		"RB205_B1_sniper"
 	],						
 	[ //B1 (Geonosis)
-		"205_B1_geonosis",
-		"205_B1_commander_geonosis",
-		"205_B1_heavy_geonosis",
-		"205_B1_at_geonosis",
-		"205_B1_aa_geonosis",
-		"205_B1_sniper_geonosis"
+		"RB205_B1_geonosis",
+		"RB205_B1_commander_geonosis",
+		"RB205_B1_heavy_geonosis",
+		"RB205_B1_at_geonosis",
+		"RB205_B1_aa_geonosis",
+		"RB205_B1_sniper_geonosis"
 	],
-	[ //B1 (Prototype)
-		"205_B1_prototype"
+	[ //B1 (Marine)
+		"RB205_B1_marine"
 	],
 	[ //BX
-		"205_BX",
-		"205_BX_captain",
-		"205_BX_heavy",
-		"205_BX_at",
-		"205_BX_aa"
+		"RB205_BX",
+		"RB205_BX_captain",
+		"RB205_BX_heavy",
+		"RB205_BX_at",
+		"RB205_BX_aa"
 	],
 	[ //B2
-		"205_B2"
+		"RB205_B2"
 	]							
 	] # _selection;
                         

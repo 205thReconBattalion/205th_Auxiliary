@@ -12,7 +12,7 @@ if (isClass(configFile >> "CfgPatches" >> "WBK_DifferentRobotics_1")) then {
         {
             params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
             
-            _options = ["B1", "B1 (Geonosis)", "B1 (Prototype)", "BX", "B2"];
+            _options = ["B1", "B1 (Geonosis)", "B1 (Marine)", "BX", "B2"];
             
             ["Erstelle Droiden DropPod", [
                 ["SIDES", ["Seitenauswahl (NUR EINE SEITE!)", "Die Fraktionsseite der Kampfdroiden."], [east]],

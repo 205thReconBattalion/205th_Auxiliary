@@ -19,10 +19,18 @@ class cfgPatches
 
 			"RB205_B_TS",
 
-			"RB205_GH_tseries_head"
+			"RB205_GH_tseries_head",
+			"RB205_GH_tseries_head_green",
+			"RB205_GH_tseries_head_red",
+			"RB205_GH_tseries_head_tv24"
 		};
 		weapons[] =
 		{
+			"RB205_U_TS",
+			"RB205_U_TS_green",
+			"RB205_U_TS_red",
+			"RB205_U_TS_tv24",
+
 			"RB205_tseries_head",
 			"RB205_tseries_head_green",
 			"RB205_tseries_head_red",
@@ -39,42 +47,46 @@ class CfgVehicles
 
 	class RB205_TS : 3AS_CIS_TS_F
 	{
-		displayName = "T-Series Droid";
-		uniformClass = "3AS_U_CIS_TS";
-		ICON_OFFICER
+		displayName = "T-Series Tactical Droid";
+		uniformClass = "RB205_U_TS";
+		hiddenSelectionsTextures[] = {"RB205_cis\droids\ts\data\ts_body_blue.paa"};
+		items[]=            { "RB205_tseries_head" };
+		respawnItems[]=     { "RB205_tseries_head" };
 
 		faction = "RB205_cis";
 		editorSubCategory = "RB205_cis_ts";
+		ICON_OFFICER
 		backpack = "RB205_B_TS";
-		linkedItems[]=          { JLTS_NVG_droid_chip_2, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
-		respawnlinkedItems[]=   { JLTS_NVG_droid_chip_2, JLTS_DroidBinocular, ItemMap, ItemGPS, JLTS_droid_comlink, ItemCompass, ItemWatch };
-		weapons[]=          { WEAPON_E5, Throw, Put };
-		respawnWeapons[]=   { WEAPON_E5, Throw, Put };
+		linkedItems[]=          { "JLTS_NVG_droid_chip_2", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
+		respawnlinkedItems[]=   { "JLTS_NVG_droid_chip_2", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
+		weapons[]=          { WEAPON_E5, BINO, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5, BINO, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5) };
 		respawnMagazines[]= { MAG_8(MAG_E5) };
-		items[]=            { RB205_tseries_head };
-		respawnItems[]=     { RB205_tseries_head };
 	};
 	class RB205_TS_green: RB205_TS
 	{
-		displayName = "T-Series Droid (Green)";
-		uniformClass = "3AS_U_CIS_TS_Green";
-		items[]=            { RB205_tseries_head_green };
-		respawnItems[]=     { RB205_tseries_head_green };
+		displayName = "T-Series Tactical Droid (Green)";
+		uniformClass = "RB205_U_TS_green";
+		hiddenSelectionsTextures[] = {"RB205_cis\droids\ts\data\ts_body_green.paa"};
+		items[]=            { "RB205_tseries_head_green" };
+		respawnItems[]=     { "RB205_tseries_head_green" };
 	};
 	class RB205_TS_red: RB205_TS
 	{
-		displayName = "T-Series Droid (Red)";
-		uniformClass = "3AS_U_CIS_TS_Red";
-		items[]=            { RB205_tseries_head_red };
-		respawnItems[]=     { RB205_tseries_head_red };
+		displayName = "T-Series Tactical Droid (Red)";
+		uniformClass = "RB205_U_TS_red";
+		hiddenSelectionsTextures[] = {"RB205_cis\droids\ts\data\ts_body_red.paa"};
+		items[]=            { "RB205_tseries_head_red" };
+		respawnItems[]=     { "RB205_tseries_head_red" };
 	};
 	class RB205_TS_tv24: RB205_TS
 	{
-		displayName = "T-Series Droid (TV24)";
-		uniformClass = "3AS_U_CIS_TS_TV24";
-		items[]=            { RB205_tseries_head_tv24 };
-		respawnItems[]=     { RB205_tseries_head_tv24 };
+		displayName = "T-Series Tactical Droid (TV24)";
+		uniformClass = "RB205_U_TS_tv24";
+		hiddenSelectionsTextures[] = {"RB205_cis\droids\ts\data\ts_body_tv24.paa"};
+		items[]=            { "RB205_tseries_head_tv24" };
+		respawnItems[]=     { "RB205_tseries_head_tv24" };
 	};
 
 	/****************
@@ -98,35 +110,131 @@ class CfgVehicles
 	};
 
 	/****************
-	   OTHER STUFF
+	      HEADS
 	****************/
 
+	class 442_tseries_head;
 	class Weapon_Base_F;
     class RB205_GH_tseries_head: Weapon_Base_F
 	{
-		displayName = "T-Series Droid Head";
-		scope = 2;
-		editorCategory = "RB205_prop";
-		editorSubcategory = "RB205_other";
-        //simulation = "thingx";
+		displayName = "T-Series Tactical Droid Head";
+		hiddenselectionstextures[] =
+		{
+			"\RB205_cis\droids\ts\data\ts_head_blue.paa",
+			"\kobra\442_misc\t_series\data\lights_co.paa"
+		};
 		class TransportItems
 		{
-			class 205_tseries_head
-			{
-				count = 1;
-				name = "RB205_tseries_head";
-			};
+			ITEM_XX(RB205_tseries_head, 1)
+		};
+
+		editorCategory = "RB205_prop";
+		editorSubcategory = "RB205_other";
+		scope = 2;
+		scopecurator = 2;
+		model = "\kobra\442_misc\t_series\t_series_head.p3d";
+		hiddenselections[] = {"camo1","lights"};
+	};
+    class RB205_GH_tseries_head_green: RB205_GH_tseries_head
+	{
+		displayName = "T-Series Tactical Droid Head (Green)";
+		hiddenselectionstextures[] =
+		{
+			"\RB205_cis\droids\ts\data\ts_head_green.paa",
+			"\kobra\442_misc\t_series\data\lights_co.paa"
+		};
+		class TransportItems
+		{
+			ITEM_XX(RB205_tseries_head_green, 1)
+		};
+	};
+    class RB205_GH_tseries_head_red: RB205_GH_tseries_head
+	{
+		displayName = "T-Series Tactical Droid Head (Red)";
+		hiddenselectionstextures[] =
+		{
+			"\RB205_cis\droids\ts\data\ts_head_red.paa",
+			"\kobra\442_misc\t_series\data\lights_co.paa"
+		};
+		class TransportItems
+		{
+			ITEM_XX(RB205_tseries_head_red, 1)
+		};
+	};
+    class RB205_GH_tseries_head_tv24: RB205_GH_tseries_head
+	{
+		displayName = "T-Series Tactical Droid Head (TV-24)";
+		hiddenselectionstextures[] =
+		{
+			"\RB205_cis\droids\ts\data\ts_head_blue.paa",
+			"\kobra\442_misc\t_series\data\lights_co.paa"
+		};
+		class TransportItems
+		{
+			ITEM_XX(RB205_tseries_head_tv24, 1)
 		};
 	};
 };
 
 class CfgWeapons
 {
+	class Uniform_Base;
+	class 3AS_U_CIS_TS: Uniform_Base
+	{
+		class ItemInfo;
+	};
+	class RB205_U_TS: 3AS_U_CIS_TS
+	{
+		displayName = "[CIS] T-Series Tactical Droid";
+		picture = "\RB205_cis\droids\data\ts_droid.paa";
+		JLTS_isDroid =  1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_deathSounds = "DeathDroid";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "RB205_TS";
+		};
+	};
+	class RB205_U_TS_green: RB205_U_TS
+	{
+		displayName="[CIS] T-Series Tactical Droid (Green)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "RB205_TS_green";
+		};
+	};
+	class RB205_U_TS_red: RB205_U_TS
+	{
+		displayName="[CIS] T-Series Tactical Droid (Red)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "205_TS_red";
+		};
+	};
+	class RB205_U_TS_tv24: RB205_U_TS
+	{
+		displayName="[CIS] T-Series Tactical Droid (TV24)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "RB205_TS_tv24";
+		};
+	};
+
+	/****************
+	      HEADS
+	****************/
+
     class ItemCore;
     class InventoryWeapon_Base_F;
     class RB205_tseries_head: ItemCore
 	{
-		displayName = "T-Series Droid Head";
+		displayName = "T-Series Tactical Droid Head";
+		hiddenselectionstextures[] =
+		{
+			"\RB205_cis\droids\ts\data\ts_head_blue.paa",
+			"\kobra\442_misc\t_series\data\lights_co.paa"
+		};
+
 		descriptionShort = "Head of a T-Series tactical droid";
 		picture = "\RB205_cis\droids\ts\data\tseries_head.paa";
         model = "\kobra\442_misc\t_series\t_series_head.p3d";
@@ -135,15 +243,9 @@ class CfgWeapons
 			"camo1",
 			"lights"
 		};
-		hiddenselectionstextures[] =
-		{
-			"\RB205_cis\droids\ts\data\ts_head_blue.paa",
-			"\kobra\442_misc\t_series\data\lights_co.paa"
-		};
-
         scope = 2;
-        detectRange = -1;
         simulation = "ItemMineDetector";
+        detectRange = -1;
 		useAsBinocular = 0;
 		type = 4096;
 		class ItemInfo: InventoryWeapon_Base_F
@@ -153,7 +255,7 @@ class CfgWeapons
 	};
 	class RB205_tseries_head_green: RB205_tseries_head
 	{
-		displayName = "T-Series Droid Head (Green)";
+		displayName = "T-Series Tactical Droid Head (Green)";
 		hiddenselectionstextures[] =
 		{
 			"\RB205_cis\droids\ts\data\ts_head_green.paa",
@@ -162,7 +264,7 @@ class CfgWeapons
 	};
 	class RB205_tseries_head_red: RB205_tseries_head
 	{
-		displayName = "T-Series Droid Head (Red)";
+		displayName = "T-Series Tactical Droid Head (Red)";
 		hiddenselectionstextures[] =
 		{
 			"\RB205_cis\droids\ts\data\ts_head_red.paa",
@@ -171,7 +273,7 @@ class CfgWeapons
 	};
 	class RB205_tseries_head_tv24: RB205_tseries_head
 	{
-		displayName = "T-Series Droid Head (TV24)";
+		displayName = "T-Series Tactical Droid Head (TV24)";
 		hiddenselectionstextures[] =
 		{
 			"\RB205_cis\droids\ts\data\ts_head_blue.paa",
