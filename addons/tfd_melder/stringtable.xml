@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="TFD">
+    <Package name="Melder">
+        <Key ID="STR_TFD_Melder_openFME">
+            <English>Öffne Pager</English>
+            <German>Öffne Pager</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_showFME">
+            <English>Zeige Pager</English>
+            <German>Zeige Pager</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_hideFME">
+            <English>Schließe Pager</English>
+            <German>Schließe Pager</German>
+        </Key>
+		
+		<Key ID="STR_TFD_Melder_FME">
+            <English>Pager</English>
+            <German>Pager</German>
+        </Key>
+		
+		
+		
+		<Key ID="STR_TFD_Melder_fms1">
+            <English>Einsatzbereit</English>
+            <German>Einsatzbereit</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_confirm">
+            <English>Einsatz Bestätigen</English>
+            <German>Einsatz Bestätigen</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_fms6">
+            <English>Nicht Einsatzbereit</English>
+            <German>Nicht Einsatzbereit</German>
+        </Key>
+		
+		<Key ID="STR_TFD_Melder_noDispatch">
+            <English>Keine Meldungen</English>
+            <German>Keine Meldungen</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_time">
+            <English>Zeit: </English>
+            <German>Zeit: </German>
+        </Key>
+		
+		
+		<Key ID="STR_TFD_Melder_ls">
+            <English>Leitstelle</English>
+            <German>Leitstelle</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_description">
+            <English>Einsatzbeschreibung:</English>
+            <German>Einsatzbeschreibung:</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_position">
+            <English>Einsatzstelle:</English>
+            <German>Einsatzstelle:</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_dispatch">
+            <English>Alarmieren</English>
+            <German>Alarmieren</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_units">
+            <English>Einheiten:</English>
+            <German>Einheiten:</German>
+        </Key>
+		
+		<Key ID="STR_TFD_Melder_pager1">
+            <English>Pager 1</English>
+            <German>Pager 1</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_pager1Descr">
+            <English>Pager zum empfangen von Alarmierungen von Leitstelle 1</English>
+            <German>Pager zum empfangen von Alarmierungen von Leitstelle 1</German>
+        </Key>
+		
+		<Key ID="STR_TFD_Melder_pager2">
+            <English>Pager 2</English>
+            <German>Pager 2</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_pager2Descr">
+            <English>Pager zum empfangen von Alarmierungen von Leitstelle 2</English>
+            <German>Pager zum empfangen von Alarmierungen von Leitstelle 2</German>
+        </Key>
+		
+		<Key ID="STR_TFD_Melder_pager3">
+            <English>Pager 3</English>
+            <German>Pager 3</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_pager3Descr">
+            <English>Pager zum empfangen von Alarmierungen von Leitstelle 3</English>
+            <German>Pager zum empfangen von Alarmierungen von Leitstelle 3</German>
+        </Key>
+		
+		<Key ID="STR_TFD_Melder_openls1">
+            <English>Leitstelle 1</English>
+            <German>Leitstelle 1</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_ls1">
+            <English>Leitstelle 1</English>
+            <German>Leitstelle 1</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_ls1Descr">
+            <English>Leitstelle um Einheiten mit Pager 1 zu alarmieren</English>
+            <German>Leitstelle um Einheiten mit Pager 1 zu alarmieren</German>
+        </Key>
+		
+		<Key ID="STR_TFD_Melder_openls2">
+            <English>Leitstelle 2</English>
+            <German>Leitstelle 2</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_ls2">
+            <English>Leitstelle 2</English>
+            <German>Leitstelle 2</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_ls2Descr">
+            <English>Leitstelle um Einheiten mit Pager 2 zu alarmieren</English>
+            <German>Leitstelle um Einheiten mit Pager 2 zu alarmieren</German>
+        </Key>
+		
+		<Key ID="STR_TFD_Melder_openls3">
+            <English>Leitstelle 3</English>
+            <German>Leitstelle 3</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_ls3">
+            <English>Leitstelle 2</English>
+            <German>Leitstelle 2</German>
+        </Key>
+		<Key ID="STR_TFD_Melder_ls3Descr">
+            <English>Leitstelle um Einheiten mit Pager 3 zu alarmieren</English>
+            <German>Leitstelle um Einheiten mit Pager 3 zu alarmieren</German>
+        </Key>
+		
+    </Package>
+</Project>
