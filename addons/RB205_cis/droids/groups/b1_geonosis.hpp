@@ -161,7 +161,7 @@ class RB205_B1_squad_geonosis
     class Unit1
     {
         side = 0;
-        vehicle = "RB205_B1_at_geonosis";
+        vehicle = "RB205_B1_geonosis";
         rank = "PRIVATE";
         position[] = {0,-1.5,0};
     };

@@ -161,7 +161,7 @@ class RB205_B1_squad_training
     class Unit1
     {
         side = 0;
-        vehicle = "RB205_B1_at_training";
+        vehicle = "RB205_B1_training";
         rank = "PRIVATE";
         position[] = {0,-1.5,0};
     };
