@@ -172,10 +172,10 @@ class CfgMarkers
 		name = "Minefield";
 		icon = "RB205_tacticalMarker\data\minefield.paa";
 	};
-	class RB205_M_dangerousWildlife: RB205_M_dot
+	class RB205_M_hazardZone: RB205_M_dot
 	{
-		name = "Dangerous Wildlife";
-		icon = "RB205_tacticalMarker\data\dangerousWildlife.paa";
+		name = "Hazard Zone";
+		icon = "RB205_tacticalMarker\data\hazardZone.paa";
 	};
 	
 	class RB205_M_phaseline: RB205_M_dot
