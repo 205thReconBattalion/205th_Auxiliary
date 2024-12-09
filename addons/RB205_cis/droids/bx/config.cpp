@@ -118,8 +118,8 @@ class CfgVehicles
 		displayName = "BX Commando Droid (Anti Person)";
 		ICON_AT
 		backpack = "RB205_B_BX_predefAP";
-		weapons[]=          { WEAPON_E5X, WEAPON_AT, BINO_BX, "Throw", "Put" };
-		respawnWeapons[]=   { WEAPON_E5X, WEAPON_AT, BINO_BX, "Throw", "Put" };
+		weapons[]=          { WEAPON_E5X, WEAPON_AA, BINO_BX, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5X, WEAPON_AA, BINO_BX, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5X), MAG_AP };
 		respawnMagazines[]= { MAG_8(MAG_E5X), MAG_AP };
 	};

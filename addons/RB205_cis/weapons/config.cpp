@@ -26,6 +26,7 @@ class cfgPatches
             "RB205_E5S",
             "RB205_B2_wristBlaster",
             "RB205_RG4D",
+            "RB205_RPS6_CIS",
             "RB205_E60R"
         };
 	};
@@ -236,6 +237,19 @@ class CfgWeapons
     };
     FRIED_WEAPON_SECONDARY(RB205_RG4D,"\MRC\JLTS\weapons\RG4D\data\ui\RG4D_fried_ui_ca.paa")
 
+    class JLTS_RPS6;
+    class RB205_RPS6_CIS: JLTS_RPS6
+    {
+        displayName = "[CIS] RPS-6 Rocket Launcher";
+        baseWeapon = "RB205_RPS6_CIS";
+        magazines[] =
+        {
+            "RB205_RPS6_AT_mag"
+        };
+        JLTS_hasEMPProtection = 1;
+        JLTS_friedItem = "";
+    };
+
     class JLTS_E60R_AT;
     class RB205_E60R: JLTS_E60R_AT
     {
@@ -243,9 +257,8 @@ class CfgWeapons
         baseWeapon = "RB205_E60R";
         magazines[] =
         {
-            "RB205_E60R_AT_mag",
-            "RB205_E60R_AP_mag",
-            "RB205_E60R_AA_mag"
+            "RB205_E60R_AA_mag",
+            "RB205_E60R_AP_mag"
         };
     };
 };
@@ -292,17 +305,21 @@ class CfgMagazines
         ammo = "RB205_RG4D_ammo";
     };
 
-    class JLTS_E60R_AT_mag;
-    class RB205_E60R_AT_mag: JLTS_E60R_AT_mag
+    class JLTS_RPS6_mag;
+    class RB205_RPS6_AT_mag: JLTS_RPS6_mag
     {
-        displayName = "E-60R AT Missile";
-        ammo = "RB205_E60R_AT_ammo";
+        displayName = "RPS-6 AT Rocket";
+        displayNameShort = "AT";
+        descriptionShort = "Type: Anti-Tank<br/>Rounds: 1<br/>Used in: RPS-6";
+        ammo = "RB205_RPS6_AT_ammo";
     };
 
     class JLTS_E60R_AP_mag;
     class RB205_E60R_AP_mag: JLTS_E60R_AP_mag
     {
         displayName = "E-60R AP Missile";
+        displayNameShort = "AP";
+        descriptionShort = "Type: Anti-Person<br/>Rounds: 1<br/>Used in: E-60R";
         ammo = "RB205_E60R_AP_ammo";
     };
 
@@ -364,13 +381,9 @@ class CfgAmmo
         effectFly = "3AS_PlasmaBolt_Red_Fly";
     };
 
-    //"Aux501_particle_effect_E60R_fly"
-    //-> Aux501_Patch_e60r
-
-    class ACE_Javelin_FGM148;
-    class RB205_E60R_AT_ammo: ACE_Javelin_FGM148
+    class R_PG32V_F;
+    class RB205_RPS6_AT_ammo: R_PG32V_F
     {
-        effectsMissile = "RB205_particle_effect_E60R_fly";
         soundFly[]=
 		{
 			"\RB205_cis\weapons\sounds\E60R_fly.wss",

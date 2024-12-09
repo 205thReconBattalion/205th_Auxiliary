@@ -47,12 +47,12 @@
 #define WEAPON_RG4D "RB205_RG4D"
 #define MAG_RG4D	"RB205_RG4D_mag"
 
-#define WEAPON_AT	"RB205_E60R"
+#define WEAPON_AT	"RB205_RPS6_CIS"
 #define WEAPON_AA	"RB205_E60R"
-#define MAG_AT 		"RB205_E60R_AT_mag"
+#define MAG_AT 		"RB205_RPS6_AT_mag"
 #define MAG_AA 		"RB205_E60R_AA_mag"
 #define MAG_AP 		"RB205_E60R_AP_mag"
-#define MAG_TP_AT 	RB205_E60R_AT_mag
+#define MAG_TP_AT 	RB205_RPS6_AT_mag
 #define MAG_TP_AA 	RB205_E60R_AA_mag
 #define MAG_TP_AP 	RB205_E60R_AP_mag
 

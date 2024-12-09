@@ -144,7 +144,7 @@ class CfgVehicles
 		uniformClass = "JLTS_DroidB1_Security";
 		backpack = "";
 	};
-	class RB205_B1_marine: RB205_B1_at
+	class RB205_B1_marine: RB205_B1_aa
 	{
 		displayName = "B1 Battle Droid [Marine]";
 		uniformClass = "JLTS_DroidB1_Marine";
