@@ -5,8 +5,7 @@ class CfgPatches
 		requiredAddons[] =
 		{
 			"RB205_main",
-			"RB205_weapons",
-			"RB205_custom"
+			"RB205_weapons"
 		};
 		requiredVersion = 1.0;
 		author = "205th Recon Battalion";
