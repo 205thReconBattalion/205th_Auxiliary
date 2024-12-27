@@ -289,7 +289,7 @@ class CfgWeapons
 		displayName = "[CIS] BX Commando Droid (Captain)";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass = "RB205_U_BX_captain";
+			uniformClass = "RB205_BX_captain";
 		};
 	};
 	class RB205_U_BX_security: RB205_U_BX
