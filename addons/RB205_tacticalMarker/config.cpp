@@ -344,7 +344,7 @@ class CfgMarkers
 		icon = "RB205_tacticalMarker\data\letterFrame.paa";
 
 		markerClass = "RB205_letter";
-		size = 25;
+		size = 32;//size = 25;
 		showEditorMarkerColor = 0;
 	};
 	class RB205_M_letter_a: RB205_M_dot
@@ -353,7 +353,7 @@ class CfgMarkers
 		icon = "\A3\ui_f\data\igui\cfg\simpletasks\letters\a_ca.paa";
 
 		markerClass = "RB205_letter";
-		size = 18;
+		size = 25;//size = 18;
 		showEditorMarkerColor = 0;
 	};
 	class RB205_M_letter_b: RB205_M_letter_a
