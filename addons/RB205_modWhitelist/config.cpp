@@ -15,3 +15,18 @@ class Extended_PostInit_EventHandlers
 		init="call compile preprocessFileLineNumbers 'RB205_modWhitelist\XEH_postInit.sqf'";
 	};
 };
+class CfgFunctions
+{
+	class RB205_MW
+	{
+		class modWhitelist
+		{
+			file="\RB205_modWhitelist\functions";
+            class getAllModsByPlayer {};
+            class getClientModsByPlayer {};
+            class getForbiddenModsByPlayer {};
+            class getMissingModsByPlayer {};
+            class getModsInfo {};
+		};
+	};
+};
