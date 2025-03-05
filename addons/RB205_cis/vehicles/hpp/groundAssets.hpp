@@ -111,3 +111,55 @@ class RB205_HAGM: 3AS_HAGM_CIS
     displayName = "[HAG-M] Heavy Artillery Gun";
     crew = B1_CREWMAN;
 };
+
+class 3AS_Heavy_AAT_Defoliator_F;
+class RB205_AAT_defoliator: 3AS_Heavy_AAT_Defoliator_F
+{
+    faction = "RB205_cis";
+    editorSubCategory = "RB205_cis_tank";
+    displayName = "[AAT|D] Defoliator Deployment Tank";
+    crew = B1_CREWMAN;
+};
+class 3AS_Heavy_AAT_Flamer_F;
+class RB205_AAT_flamer: 3AS_Heavy_AAT_Flamer_F
+{
+    faction = "RB205_cis";
+    editorSubCategory = "RB205_cis_tank";
+    displayName = "[AAT|F] Flamer Deployment Tank";
+    crew = B1_CREWMAN;
+};
+class 3AS_Heavy_AAT_Shield_F;
+class RB205_AAT_shield: 3AS_Heavy_AAT_Shield_F
+{
+    faction = "RB205_cis";
+    editorSubCategory = "RB205_cis_tank";
+    displayName = "[AAT|S] Shield Deployment Tank";
+    crew = B1_CREWMAN;
+};
+
+class 3AS_Fliknot_F;
+class RB205_flitknot: 3AS_Fliknot_F
+{
+    faction = "RB205_cis";
+    editorSubCategory = "RB205_cis_veh";
+    displayName = "[FKS] Flitknot Speeder Bike";
+    crew = TACTICAL_DROID;
+};
+class RB205_flitknot_bx: RB205_flitknot
+{
+    displayName = "[FKS] Flitknot Speeder Bike (BX)";
+    crew = COMMANDO_DROID;
+};
+class RB205_flitknot_bx_sniper: RB205_flitknot
+{
+    displayName = "[FKS] Flitknot Speeder Bike (BX Sniper)";
+    crew = "RB205_BX_sniper";
+};
+class 3AS_Combat_Speeder_F;
+class RB205_combatSpeeder: 3AS_Combat_Speeder_F
+{
+    faction = "RB205_cis";
+    editorSubCategory = "RB205_cis_veh";
+    displayName = "[CS] Combat Speeder";
+    crew = B1_DEFAULT;
+};

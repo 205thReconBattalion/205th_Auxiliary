@@ -25,6 +25,15 @@ class cfgPatches
 			"RB205_SAC_repair",
 			"RB205_HAGM",
 
+			"RB205_AAT_defoliator",
+			"RB205_AAT_flamer",
+			"RB205_AAT_shield",
+
+			"RB205_flitknot",
+			"RB205_flitknot_bx",
+			"RB205_flitknot_bx_sniper",
+			"RB205_combatSpeeder",
+
 			"RB205_vulture",
 			"RB205_vulture_cas",
 			"RB205_vulture_aa",
@@ -50,11 +59,7 @@ class cfgPatches
 			"RB205_cis_defenseTurret",
 			"RB205_j10Turret",
 			"RB205_cis_mortar",
-			"RB205_cis_fcp",
-
-			"RB205_flitknot",
-			"RB205_flitknot_bx",
-			"RB205_flitknot_bx_sniper"
+			"RB205_cis_fcp"
 		};
 		weapons[] = {};
 	};
@@ -67,7 +72,6 @@ class CfgVehicles
     #include "hpp\groundAssets.hpp"
 	#include "hpp\airAssets.hpp"
 	#include "hpp\stationaryAssets.hpp"
-	#include "hpp\otherAssets.hpp"
 };
 
 class CfgEditorSubcategories

@@ -28,6 +28,11 @@ class CfgGroups
 		class RB205_cis_groups
 		{
 			name = "[205] Confederacy of Independent Systems";
+			class Vehicle
+            {
+                name = "Vehicles";
+                #include "groundAssets\flitknot.hpp"
+            };
 			class Vehicle_ground
             {
                 name = "Vehicles - Tanks";
@@ -48,11 +53,6 @@ class CfgGroups
             {
                 name = "Vehicles - Stationary";
                 #include "stationaryAssets\mortar.hpp"
-            };
-            class Vehicle_other
-            {
-                name = "Vehicles - Other";
-                #include "otherAssets\flitknot.hpp"
             };
 		};
 	};
