@@ -46,7 +46,7 @@ class RscDisplayMain: RscStandardDisplay
 					text="Join 205th (FunOp I)";
 					tooltip="Server beitreten (hier findet statt: FunOp)";
 					y="(4 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-					onbuttonclick="connectToServer ['5.9.255.45', 2901, '205']";
+					onbuttonclick="connectToServer ['5.9.255.45', 2903, '205']";
 				};
 				class Join205Server_FunOp2: ServerBrowser
 				{
@@ -62,7 +62,7 @@ class RscDisplayMain: RscStandardDisplay
 					text="Join 205th (Training)";
 					tooltip="Server beitreten (hier findet statt: Ausbildungen, Trainings, Sonstiges)";
 					y="(6 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-					onbuttonclick="connectToServer ['5.9.255.45', 2902, '205']";
+					onbuttonclick="connectToServer ['5.9.255.45', 2906, '205']";
 				};
 			};
 		};
