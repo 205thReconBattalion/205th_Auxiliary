@@ -18,4 +18,15 @@ if (isServer) then
 		[_i, [true, false]] remoteExec ["enablechannel",0,true];
 	}; //Custom
 	*/
+	
+	RB205_channelID_recon = _channelID;
+	RB205_channelName_recon = _channelName;
+	publicVariable "RB205_channelID_recon";
+	publicVariable "RB205_channelName_recon";
 };
+
+player addEventHandler ["Respawn", {
+	params ["_unit", "_corpse"];
+	RB205_channelUnit_recon = _unit;
+	[RB205_channelID_recon, {_this radioChannelAdd [RB205_channelUnit_recon]}] remoteExec ["call", [0, -2] select isDedicated, RB205_channelName_recon];
+}];
