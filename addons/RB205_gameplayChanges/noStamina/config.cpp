@@ -16,7 +16,7 @@ class cfgPatches
 	};
 };
 
-class Extended_PreStart_EventHandlers
+/*class Extended_PreStart_EventHandlers
 {
 	class ace_advanced_fatigue
 	{
@@ -45,4 +45,4 @@ class Extended_DisplayLoad_EventHandlers
 	{
 		ace_advanced_fatigue="";
 	};
-}
+}*/
