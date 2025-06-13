@@ -6,7 +6,7 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_cis_droids",
-            "lsd_units_redfor",
+            "ls_characters_droid",
 			"WBK_DifferentRobotics_1"
 		};
 		requiredVersion = 1.0;
@@ -31,7 +31,7 @@ class cfgPatches
 class CfgVehicles
 {
 	class WBK_B2_Mod_Standart;
-    class lsd_cis_b2_standard;
+    class ls_droid_b2;
 
 	class RB205_B2: WBK_B2_Mod_Standart
 	{
@@ -62,7 +62,7 @@ class CfgVehicles
 		backpack = "RB205_B2_jetpack";
 	};
 
-	class RB205_B2_unarmed: lsd_cis_b2_standard
+	class RB205_B2_unarmed: ls_droid_b2
 	{
 		displayName = "B2 Super Battle Droid (Unarmed)";
 		ICON_DEFAULT
@@ -95,12 +95,12 @@ class CfgVehicles
 
 class CfgWeapons
 {
-	class ls_redforUniform_base;
-	class lsd_cis_b2Droid_uniform: ls_redforUniform_base
+	class ls_droidUniform_base;
+	class ls_droidUniform_b2: ls_droidUniform_base
 	{
 		class ItemInfo;
 	};
-	class RB205_U_B2: lsd_cis_b2Droid_uniform
+	class RB205_U_B2: ls_droidUniform_b2
 	{
 		displayName = "[CIS] B2 Super Battle Droid";
 		picture = "\RB205_cis\droids\data\b2_droid.paa";

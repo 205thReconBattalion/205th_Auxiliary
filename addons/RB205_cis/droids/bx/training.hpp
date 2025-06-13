@@ -3,7 +3,7 @@
 class RB205_BX_training: RB205_BX
 {
 	uniformClass = "RB205_U_BX_training";
-	hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\trainingCamo\textures\bx_training_co.paa"};
+	hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\training_body_co.paa"};
 	SUBCATEGORY_TRAINING
 };
 class RB205_BX_heavy_training: RB205_BX_heavy

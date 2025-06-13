@@ -6,7 +6,7 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_cis_droids",
-            "ls_armor_redfor"
+            "ls_characters_droid"
 		};
 		requiredVersion = 1.0;
 		units[] =
@@ -50,9 +50,9 @@ class cfgPatches
 
 class CfgVehicles
 {
-    class lsd_cis_bxdroid_specops;
+    class ls_droid_bx;
 
-	class RB205_BX: lsd_cis_bxdroid_specops
+	class RB205_BX: ls_droid_bx
 	{
 		displayName = "BX Commando Droid";
 		ICON_DEFAULT
@@ -63,7 +63,7 @@ class CfgVehicles
 		respawnMagazines[]= { MAG_8(MAG_E5X) };
 
 		uniformClass = "RB205_U_BX";
-		hiddenSelectionsTextures[] = {"ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
+		hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\body_co.paa"};
 		faction = "RB205_cis";
 		editorSubcategory = "RB205_cis_bx";
 		linkedItems[]=          { "RB205_V_BX", "JLTS_NVG_droid_chip_2", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
@@ -137,19 +137,19 @@ class CfgVehicles
 		displayName = "BX Commando Droid [Captain]";
 		ICON_OFFICER
 		uniformClass = "RB205_U_BX_captain";
-		hiddenSelectionsTextures[] = {"lsd_units_redfor\cis\specops\textures\bx_captain_co.paa"};
+		hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\captain_body_co.paa"};
 	};
 	class RB205_BX_security: RB205_BX
 	{
 		displayName = "BX Commando Droid [Security]";
 		uniformClass = "RB205_U_BX_security";
-		hiddenSelectionsTextures[] = {"lsd_units_redfor\cis\specops\textures\bx_security_co.paa"};
+		hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\security_body_co.paa"};
 	};
 	class RB205_BX_diplomat: RB205_BX
 	{
 		displayName = "BX Commando Droid [Diplomat]";
 		uniformClass = "RB205_U_BX_diplomant";
-		hiddenSelectionsTextures[] = {"lsd_units_redfor\cis\specops\textures\bx_diplomat_co.paa"};
+		hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\diplomat_body_co.paa"};
 	};
 
 	class WBK_BX_Assasin_1;
@@ -232,12 +232,12 @@ class CfgVehicles
 
 class CfgWeapons
 {
-	class ls_redforVest_base;
-	class ls_cis_bxCommando_vest: ls_redforVest_base
+	class ls_vest_base;
+	class ls_droidVest_bx: ls_vest_base
 	{
 		class ItemInfo;
 	};
-	class RB205_V_BX: ls_cis_bxCommando_vest
+	class RB205_V_BX: ls_droidVest_bx
 	{
 		displayName = "[CIS] BX Commando Droid Plating";
 		class ItemInfo: ItemInfo
@@ -267,12 +267,12 @@ class CfgWeapons
 		};
 	};
 
-	class ls_redforUniform_base;
-	class lsd_cis_bxDroid_uniform: ls_redforUniform_base
+	class ls_droidUniform_base;
+	class ls_droidUniform_bx: ls_droidUniform_base
 	{
 		class ItemInfo;
 	};
-	class RB205_U_BX: lsd_cis_bxDroid_uniform
+	class RB205_U_BX: ls_droidUniform_bx
 	{
 		displayName = "[CIS] BX Commando Droid";
 		picture = "\RB205_cis\droids\data\bx_droid.paa";
