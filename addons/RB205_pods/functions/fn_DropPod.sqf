@@ -12,7 +12,7 @@ params ["_position","_dropside","_selection","_linger"];
 
 	_angle = [(_position vectorFromTo _spawnpos)#0, (_position vectorFromTo _spawnpos)#1, ((_position vectorFromTo _spawnpos)#2)];
 
-	_projectile = createvehicle ["ls_ground_droidDispenser", [0, 0, 0], [], 0, "NONE"];
+	_projectile = createvehicle ["ls_droidDispenser", [0, 0, 0], [], 0, "NONE"];
 	[_projectile, 0, 0] call BIS_fnc_setPitchBank;
 	_projectile setPosATL (getPosATL _mainprojectile);
 	[_projectile, _mainprojectile] call BIS_fnc_attachtorelative;
@@ -81,7 +81,7 @@ _craterpos set [2, 0];
 _DroidPodCrater = createvehicle ["land_ShellCrater_02_small_F", _craterpos, [], 0, "CAN_COLLIDE"];
 						
 deletevehicle _projectile;
-_projectile = createvehicle ["ls_ground_droidDispenser", [0,0,0], [], 0, "NONE"];
+_projectile = createvehicle ["ls_droidDispenser", [0,0,0], [], 0, "NONE"];
 _projectile enableSimulation false;
 _projectile allowdamage false;
 
