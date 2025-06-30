@@ -66,8 +66,8 @@ class RB205_MAF_transport: 3AS_MAF_Transport_F
     crew = B1_PILOT;
 };
 
-class lsd_largeVTOL_cisDropship;
-class RB205_dragonFly: lsd_largeVTOL_cisDropship
+class ls_vehicle_cisDropship;
+class RB205_dragonFly: ls_vehicle_cisDropship
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_starfighter";

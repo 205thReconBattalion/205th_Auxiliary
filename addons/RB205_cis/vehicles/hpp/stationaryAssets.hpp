@@ -99,8 +99,8 @@ class RB205_cis_autoTurret: JLTS_UST_turret_CIS
         primary = 1;
     };
 }
-class ls_turret_pirate_autoturret;
-class RB205_cis_defenseTurret: ls_turret_pirate_autoturret
+class ls_vehicle_autoTurret_pirate;
+class RB205_cis_defenseTurret: ls_vehicle_autoTurret_pirate
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_turret";

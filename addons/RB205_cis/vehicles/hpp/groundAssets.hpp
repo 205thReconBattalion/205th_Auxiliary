@@ -62,8 +62,8 @@ class RB205_Hailfire_SAM: 3AS_Hailfire_SAM
     displayName = "[HAIL] Hailfire Droid (SAM)";
     crew = B1_CREWMAN;
 };
-class lsd_ground_agtRaptor;
-class RB205_raptor: lsd_ground_agtRaptor
+class ls_vehicle_agtRaptor;
+class RB205_raptor: ls_vehicle_agtRaptor
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_tank";
