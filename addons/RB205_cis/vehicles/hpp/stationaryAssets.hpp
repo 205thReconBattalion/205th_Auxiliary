@@ -17,7 +17,7 @@ class RB205_droideka_heavy: k_CIS_Droideka
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_turret";
-    displayName = "[DEKA|E] Droideka (Explosive)";
+    displayName = "[DEKA] Droideka (Explosive)";
 };
 
 class Aux212_Crab_Droid_Light_Static;

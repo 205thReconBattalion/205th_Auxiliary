@@ -23,6 +23,30 @@ class RB205_vulture_aa: 3AS_CIS_Vulture_AA_F
     crew = B1_PILOT;
 };
 
+class Poly_Hyena_Bomber;
+class RB205_hyena: Poly_Hyena_Bomber
+{
+    faction = "RB205_cis";
+    editorSubCategory = "RB205_cis_starfighter";
+    displayName = "[HYENA] Hyena Droid Bomber";
+    crew = B1_PILOT;
+
+    weapons[] = {
+        "3AS_Vulture_Cannon",
+        "VL61ProtonBomb",
+        "BombCluster_01_F",
+        "Laserdesignator_pilotCamera",
+        "CMFlareLauncher"
+    };
+    magazines[] = {
+        "3AS_300Rnd_Vulture_Shells","3AS_300Rnd_Vulture_Shells","3AS_300Rnd_Vulture_Shells",
+        "VL61_ProtonMagazine",
+        "PylonRack_2Rnd_BombCluster_01_F","PylonRack_2Rnd_BombCluster_01_F",
+        "Laserbatteries",
+        "120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine"
+    };
+};
+
 class 3AS_Tri_Fighter_DynamicLoadout;
 class RB205_Tri_Fighter: 3AS_Tri_Fighter_DynamicLoadout
 {

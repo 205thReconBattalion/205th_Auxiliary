@@ -29,14 +29,19 @@ class cfgPatches
 			"RB205_AAT_flamer",
 			"RB205_AAT_shield",
 
+			"RB205_triDroid",
+			"RB205_triDroid_magna",
+
 			"RB205_flitknot",
 			"RB205_flitknot_bx",
 			"RB205_flitknot_bx_sniper",
 			"RB205_combatSpeeder",
+			"RB205_STAP",
 
 			"RB205_vulture",
 			"RB205_vulture_cas",
 			"RB205_vulture_aa",
+			"RB205_hyena",
 			"RB205_Tri_Fighter",
 			"RB205_HMP",
 			"RB205_HMP_transport",
