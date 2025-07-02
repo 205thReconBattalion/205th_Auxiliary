@@ -6,6 +6,7 @@ class RB205_AAT: 3AS_AAT
     displayName = "[AAT] Armored Aussault Tank";
     crew = B1_CREWMAN;
 };
+
 class 3AS_GAT;
 class RB205_GAT: 3AS_GAT
 {
@@ -22,6 +23,7 @@ class RB205_GAT_light: 3AS_GAT_Light
     displayName = "[GAT|L] Ground Armored Tank (Light)";
     crew = B1_CREWMAN;
 };
+
 class 3AS_n99;
 class RB205_N99: 3AS_n99
 {
@@ -30,6 +32,7 @@ class RB205_N99: 3AS_n99
     displayName = "[N99] NR-N99 Tank Droid";
     crew = B1_CREWMAN;
 };
+
 class 3AS_Advanced_DSD;
 class RB205_ADSD: 3AS_Advanced_DSD
 {
@@ -38,6 +41,7 @@ class RB205_ADSD: 3AS_Advanced_DSD
     displayName = "[ADSD] Advanced Dwarf Spider Droid";
     crew = B1_CREWMAN;
 };
+
 class 3AS_Hailfire_AT;
 class RB205_Hailfire_AT: 3AS_Hailfire_AT
 {
@@ -62,6 +66,7 @@ class RB205_Hailfire_SAM: 3AS_Hailfire_SAM
     displayName = "[HAIL] Hailfire Droid (SAM)";
     crew = B1_CREWMAN;
 };
+
 class ls_vehicle_agtRaptor;
 class RB205_raptor: ls_vehicle_agtRaptor
 {
@@ -78,6 +83,7 @@ class RB205_MTT: 3as_MTT
     displayName = "[MTT] Multi-Troop Transport";
     crew = B1_CREWMAN;
 };
+
 class 3AS_PAC_F;
 class RB205_PAC: 3AS_PAC_F
 {
@@ -137,6 +143,48 @@ class RB205_AAT_shield: 3AS_Heavy_AAT_Shield_F
     crew = B1_CREWMAN;
 };
 
+class P_TriBase;
+class RB205_triDroid: P_TriBase
+{
+    faction = "RB205_cis";
+    editorSubCategory = "RB205_cis_tank";
+    displayName = "[TRI] Octuptarra Tri-Droid";
+    crew = B1_CREWMAN;
+
+    armor = 500;
+    class HitPoints {
+        class HitHull {
+            armor = 4.5; //1.6;
+            explosionShielding = 0.2; //10;
+            passThrough = 1; //0.08;
+            minimalHit = 0.2; //0.14;
+            radius = 0.12; //0.11;
+            material = -1;
+            name = "telo";
+            visual = "zbytek";
+        };
+        class HitEngine {
+            armor = 0.75; //1.5;
+            explosionShielding = 0.2; //1;
+            passThrough = 0.2; //0.08;
+            minimalHit = 0.24;
+            radius = 0.33;
+            material = -1;
+            name = "motor";
+        };
+    };
+};
+class P_MangaTri;
+class RB205_triDroid_magna: P_MangaTri
+{
+    faction = "RB205_cis";
+    editorSubCategory = "RB205_cis_tank";
+    displayName = "[TRI|M] Octuptarra Magna Tri-Droid";
+    crew = B1_CREWMAN;
+    
+    armor = 500;
+};
+
 class 3AS_Fliknot_F;
 class RB205_flitknot: 3AS_Fliknot_F
 {
@@ -155,11 +203,21 @@ class RB205_flitknot_bx_sniper: RB205_flitknot
     displayName = "[FKS] Flitknot Speeder Bike (BX Sniper)";
     crew = "RB205_BX_sniper";
 };
+
 class 3AS_Combat_Speeder_F;
 class RB205_combatSpeeder: 3AS_Combat_Speeder_F
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_veh";
     displayName = "[CS] Combat Speeder";
+    crew = B1_DEFAULT;
+};
+
+class P_STAP_CIS;
+class RB205_STAP: P_STAP_CIS
+{
+    faction = "RB205_cis";
+    editorSubCategory = "RB205_cis_veh";
+    displayName = "[STAP] STAP Speeder";
     crew = B1_DEFAULT;
 };
