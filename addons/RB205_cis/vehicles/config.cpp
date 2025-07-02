@@ -5,7 +5,8 @@ class cfgPatches
 		author = "Spark";
 		requiredAddons[] =
 		{
-			"RB205_cis"
+			"RB205_cis",
+			"3AS_VehicleWeapons"
 		};
 		requiredVersion = 1.0;
 		units[] =
@@ -78,6 +79,8 @@ class CfgVehicles
 	#include "hpp\airAssets.hpp"
 	#include "hpp\stationaryAssets.hpp"
 };
+
+#include "weapons.hpp"
 
 class CfgEditorSubcategories
 {
