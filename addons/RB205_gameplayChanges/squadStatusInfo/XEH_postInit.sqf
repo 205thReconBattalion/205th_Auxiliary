@@ -53,7 +53,7 @@ while { RB205_GC_SSI_Active } do {
 
 		// Hide empty groups (not completely)
 		if(_squadCount == 0) then {
-			(_allSquadMarkers select _i) setMarkerAlphaLocal 0.3;
+			(_allSquadMarkers select _i) setMarkerAlphaLocal 0;
 		} else {
 			(_allSquadMarkers select _i) setMarkerAlphaLocal 1;
 		};
