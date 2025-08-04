@@ -5,8 +5,11 @@ class CfgPatches
 		author = "205th Recon Battalion";
 		requiredAddons[] =
 		{
-			"ace_medical_treatment"
+			"ace_medical_treatment",
+			"JLTS_C_Drugs",
+			"442_misc"
 		};
+        skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
 		units[] = {};
 	};

@@ -53,6 +53,11 @@ class CfgMarkers
 		name = "Triangle";
 		icon = "RB205_tacticalMarker\data\triangle.paa";
 	};
+	class RB205_M_blank: RB205_M_dot
+	{
+		name = "<Blank>";
+		icon = "RB205_tacticalMarker\data\_blank.paa";
+	};
 
 	class RB205_M_attack: RB205_M_dot
 	{
