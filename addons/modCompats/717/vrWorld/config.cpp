@@ -18,6 +18,7 @@ class CfgWorlds
 	class CAWorld;
 	class VR: CAWorld
 	{
+		description = " Virtual Reality";
 		midDetailTexture = "A3\Map_VR\data\L_middle_mco.paa";
 	};
 };
