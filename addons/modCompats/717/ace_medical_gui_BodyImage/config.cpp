@@ -19,10 +19,10 @@ class RscControlsGroupNoScrollbars;
 class ace_medical_gui_BodyImage: RscControlsGroupNoScrollbars
 {
 	idc = 6000;
-	x = "((13.33) * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX + (safezoneW - ((safezoneW / safezoneH) min 1.2))/2))";
-	y = "((2.73) * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2))";
-	w = "((12.33) * (((safezoneW / safezoneH) min 1.2) / 40))";
-	h = "((12.33) * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
+	x = "((13.83) * ((	(safezoneW / safezoneH) min 1.2) / 40	) + 		(safezoneX + (safezoneW - (	(safezoneW / safezoneH) min 1.2))/ 2))";
+	y = "((2.73) * 	(((	(safezoneW / safezoneH) min 1.2) / 1.2	) / 25) + 	(safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2)) / 2))";
+	w = "((12.33) * ((	(safezoneW / safezoneH) min 1.2) / 40	))";
+	h = "((12.33) * (((	(safezoneW / safezoneH) min 1.2) / 1.2	) / 25))";
 	class controls
 	{
 		class Background: RscPicture
@@ -31,7 +31,7 @@ class ace_medical_gui_BodyImage: RscControlsGroupNoScrollbars
 			text = "\z\ace\addons\medical_gui\data\body_image\background.paa";
 			x = 0;
 			y = 0;
-			w = "((12.33) * (((safezoneW / safezoneH) min 1.2) / 40))";
+			w = "((12.33) * ((( safezoneW / safezoneH) min 1.2) / 40))";
 			h = "((12.33) * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
 		};
 		class Head: Background
