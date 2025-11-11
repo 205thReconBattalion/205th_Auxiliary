@@ -1,0 +1,3 @@
+# ignore ALL .pbo files
+*.pbo
+*.bak
