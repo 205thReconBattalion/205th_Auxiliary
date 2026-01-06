@@ -7,7 +7,7 @@ class CfgPatches
 		{
 			"ace_medical_treatment",
 			"JLTS_C_Drugs",
-			"442_misc"
+			"442_misc_medical"
 		};
         skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
