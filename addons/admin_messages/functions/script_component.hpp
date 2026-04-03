@@ -1,1 +1,0 @@
-#include "\z\mti\addons\admin_messages\script_component.hpp"
