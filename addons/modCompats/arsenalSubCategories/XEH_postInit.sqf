@@ -25,6 +25,10 @@
 
  [
     [
+        "3AS_Block_Stud_S","3AS_Block_Stud_G","3AS_Block_Stud_B","3AS_Block_Stud_P",
+        "3AS_Block_Kit","3AS_Block_Kit_B",
+        "3AS_Block_Block","3AS_Block_Block_G",
+        
         "JLTS_drugs_bacta","JLTS_drugs_kolto","JLTS_drugs_bacta_red","JLTS_drugs_protein","JLTS_drugs_medikit",
         "JLTS_drugs_stimulant_adrenal","JLTS_drugs_stimulant_battle","JLTS_drugs_stimulant_echaniBattle","JLTS_drugs_stimulant_hyperAdrenal","JLTS_drugs_stimulant_hyperBattle",
 
