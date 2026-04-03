@@ -9,8 +9,10 @@ class cfgPatches
 		requiredAddons[] =
         {
             "RB205_tacticalMarker",
-			"CBA_Extended_EventHandlers"
+			"CBA_Extended_EventHandlers",
+			"RB205_core"
         };
+        skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
 		units[] = {};
 		weapons[] = {};
