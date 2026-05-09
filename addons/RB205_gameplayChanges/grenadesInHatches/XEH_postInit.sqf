@@ -38,3 +38,4 @@ _progressbar = {
 
 _action = ["Granate einwerfen", "Granate einwerfen", "",_progressbar,_condition] call ace_interact_menu_fnc_createAction;
 ["3AS_AAT_base_F", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+["3AS_Heavy_AAT_Base_F", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
