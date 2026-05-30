@@ -4,9 +4,10 @@
         "JLTS_flan_10","JLTS_flan_50","JLTS_flan_100","JLTS_flan_500","JLTS_flan_1000","JLTS_flan_5000",
         "JLTS_credit_card","3AS_Intel_CreditCase",
 
-        "JLTS_ids_license_weapon_secondary","JLTS_ids_license_weapon_primary","JLTS_ids_license_driver_large","JLTS_ids_license_driver_medium","JLTS_ids_license_driver_small",
+        "JLTS_ids_license_weapon_primary","JLTS_ids_license_weapon_secondary","JLTS_ids_license_driver_large","JLTS_ids_license_driver_medium","JLTS_ids_license_driver_small",
         "JLTS_ids_rep_civ","RB205_ids_cis_civ","RB205_ids_neutral_civ","JLTS_ids_police",
         "JLTS_ids_gar_army","JLTS_ids_gar_medical","JLTS_ids_gar_navy","RB205_ids_rep_diplomat",
+        "RB205_ids_cis_diplomat",
         
         "JLTS_intel_datacard","3AS_Intel_DataChip","3AS_Intel_DataPad","P_Datapad","JLTS_scanner_police","JLTS_intel_datapad_civ","JLTS_intel_holoProjector",
         "JLTS_scanner_bounty","JLTS_intel_bountypuck","JLTS_intel_trackingFob",
