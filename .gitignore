@@ -1,3 +1,6 @@
 # ignore ALL .pbo files
 *.pbo
 *.bak
+DiscordRichPresence_x64.dll
+
+DiscordRichPresence.dll
