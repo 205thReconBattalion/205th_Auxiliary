@@ -35,8 +35,8 @@ class RscDisplayMain: RscStandardDisplay
 				class Join205Server_MainOp: ServerBrowser
 				{
 					idc=-1;
-					text="Join 205th (MainOp)"; // text="205th Server I";
-					tooltip="Server beitreten (hier findet statt: MainOp)"; // tooltip="Hier findet statt: MainOP, FunOP, Training";
+					text="Join 205th (MainOp)";
+					tooltip="Server beitreten (hier findet statt: MainOp)";
 					y="(3 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
 					onbuttonclick="connectToServer ['45.152.241.67', 2302, '205']";
 				};
@@ -62,7 +62,7 @@ class RscDisplayMain: RscStandardDisplay
 					text="Join 205th (Training)";
 					tooltip="Server beitreten (hier findet statt: Ausbildungen, Trainings, Sonstiges)";
 					y="(6 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-					onbuttonclick="connectToServer ['5.9.255.45', 2906, '205']";
+					onbuttonclick="connectToServer ['45.152.241.67', 2310, '205']";
 				};
 			};
 		};
