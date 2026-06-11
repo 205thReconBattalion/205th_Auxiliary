@@ -1,7 +1,6 @@
 /*
 	Deactivates Stamina (vanilla and ace)
 */
-
 class cfgPatches
 {
 	class RB205_gameplayChanges_noStamina
@@ -16,7 +15,7 @@ class cfgPatches
 	};
 };
 
-/*class Extended_PreStart_EventHandlers
+class Extended_PreStart_EventHandlers
 {
 	class ace_advanced_fatigue
 	{
@@ -45,4 +44,4 @@ class Extended_DisplayLoad_EventHandlers
 	{
 		ace_advanced_fatigue="";
 	};
-}*/
+};

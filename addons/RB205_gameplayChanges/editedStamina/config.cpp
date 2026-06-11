@@ -1,7 +1,7 @@
 /*
 	Edites Stamina
 */
-
+/*
 class cfgPatches
 {
 	class RB205_gameplayChanges_editedStamina
