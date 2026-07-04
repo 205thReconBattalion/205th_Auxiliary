@@ -1,6 +1,6 @@
 class RB205_notification
 {
-    idd = 205530;
+    idd = 205100;
     movingEnable = 0;
     enableSimulation = 1;
 
@@ -22,7 +22,13 @@ class RB205_notification
 
     class controls
     {
-
-
+        class dialogText : RB205notification_RscText
+        {
+            idc = 205101;
+            x = HINTERGRUND_X + 0.03;
+            y = HINTERGRUND_Y + 0.03;
+            w = HINTERGRUND_W - 0.06;
+            h = HINTERGRUND_H - 0.06;
+        };
     };
 };

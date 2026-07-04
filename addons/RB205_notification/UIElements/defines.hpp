@@ -34,7 +34,7 @@ class RB205notification_RscText
     access = 0;
     type = CT_STRUCTURED_TEXT;
     idc = -1;
-    style = ST_LEFT;
+    style = ST_CENTER;
 
 
     size = 0.04;
