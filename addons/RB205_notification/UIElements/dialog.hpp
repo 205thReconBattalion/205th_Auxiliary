@@ -16,7 +16,7 @@ class RB205_notification
             h = HINTERGRUND_H;
             colorBackground[] = {0,0,0,0.6};
             colorText[] = {1,1,1,0.7};
-            text = "RB205_notification\UIElements\bilder\HintergrundDialog.paa";
+            text = "RB205_notification\UIElements\Hintergrund.paa";
         };
     };
 
