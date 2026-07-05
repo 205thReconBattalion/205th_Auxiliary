@@ -1,11 +1,19 @@
 #define CT_STATIC           0
-#define ST_CENTER           2
+#define ST_LEFT             0x00    
+#define ST_RIGHT            0x01    
+#define ST_CENTER           0x02    
 #define CT_STRUCTURED_TEXT  13
 
 #define HINTERGRUND_X       0.35 * safezoneW + safezoneX
-#define HINTERGRUND_Y       0.20 * safezoneH + safezoneY
+#define HINTERGRUND_Y       0.10 * safezoneH + safezoneY
 #define HINTERGRUND_W       0.30 * safezoneW
-#define HINTERGRUND_H       0.60 * safezoneH
+#define HINTERGRUND_H       0.30 * safezoneH
+
+#define TEXT_X              (HINTERGRUND_X + (HINTERGRUND_W * 0.1233))
+#define TEXT_Y              (HINTERGRUND_Y + (HINTERGRUND_H * 0.2233))
+#define TEXT_W              (HINTERGRUND_W * 0.7867)
+#define TEXT_H              (HINTERGRUND_H * 0.5)
+
 
 class RB205notification_RscPicture
 {
@@ -37,7 +45,7 @@ class RB205notification_RscText
     style = ST_CENTER;
 
 
-    size = 0.04;
+    size = 0.03;
 
     text = "";
     colorBackground[] = {0,0,0,0};
@@ -45,7 +53,7 @@ class RB205notification_RscText
     class Attributes
     {
         font = "JLTS_republic";
-        color = "#BFEFFF";          
+        color = "#08749C";          
         align = "center";
         valign = "middle";
         shadow = 2;
