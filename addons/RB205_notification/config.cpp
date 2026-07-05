@@ -22,3 +22,5 @@ class CfgFunctions
 	};
 };
 
+#include "\RB205_notification\UIElements\defines.hpp"
+#include "\RB205_notification\UIElements\dialog.hpp"
