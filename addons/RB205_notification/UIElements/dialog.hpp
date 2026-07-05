@@ -1,34 +1,39 @@
-class RB205_notification
+class RscTitles
 {
-    idd = 205100;
-    movingEnable = 0;
-    enableSimulation = 1;
+    titles[] = {"RB205_notification"};
 
-    class controlsBackground
+    class RB205_notification
     {
-
-        class DialogBackground: RB205notification_RscPicture
+        idd = -1;
+        movingEnable = 0;
+        duration = 10; 
+        fadeIn = 0;
+        fadeOut = 0;
+        name = "RB205_notification";
+        onLoad = "uiNamespace setVariable ['RB205_notification', _this select 0]";
+        onUnload = "uiNamespace setVariable ['RB205_notification', nil]";
+        
+        class controls
         {
-            idc = -1;
-            x = HINTERGRUND_X;
-            y = HINTERGRUND_Y;
-            w = HINTERGRUND_W;
-            h = HINTERGRUND_H;
-            colorBackground[] = {0,0,0,0.6};
-            colorText[] = {1,1,1,0.7};
-            text = "RB205_notification\UIElements\Hintergrund.paa";
-        };
-    };
-
-    class controls
-    {
-        class dialogText : RB205notification_RscText
-        {
-            idc = 205101;
-            x = HINTERGRUND_X + 0.03;
-            y = HINTERGRUND_Y + 0.03;
-            w = HINTERGRUND_W - 0.06;
-            h = HINTERGRUND_H - 0.06;
+            class DialogBackground: RB205notification_RscPicture
+            {
+                idc = -1;
+                x = HINTERGRUND_X;
+                y = HINTERGRUND_Y;
+                w = HINTERGRUND_W;
+                h = HINTERGRUND_H;
+                colorBackground[] = {0,0,0,0.6};
+                colorText[] = {1,1,1,0.7};
+                text = "\RB205_notification\UIElements\Hintergrund.paa";
+            };
+            class dialogText : RB205notification_RscText
+            {
+                idc = 205101;
+                x = TEXT_X;
+                y = TEXT_Y;
+                w = TEXT_W;
+                h = TEXT_H;
+            };
         };
     };
 };
