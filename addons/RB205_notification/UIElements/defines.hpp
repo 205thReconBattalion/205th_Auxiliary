@@ -52,7 +52,7 @@ class RB205notification_RscText
 
     class Attributes
     {
-        font = "JLTS_republic";
+        font = "EtelkaMonospacePro";
         color = "#08749C";          
         align = "center";
         valign = "middle";
