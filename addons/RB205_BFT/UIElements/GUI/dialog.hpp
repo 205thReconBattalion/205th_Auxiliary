@@ -1,12 +1,12 @@
-class RB205_RscGroupDialog
+class RB205_BFTSelectGroupDialog
 {
-    idd = 205500;
+    idd = 205550;
     movingEnable = 1;
     enableSimulation = 1;
 
     class ControlsBackground
     {
-        class Background: RscText
+        class Background: RB205_BFT_RscText
         {
             idc = -1;
             x = 0.28 * safezoneW + safezoneX;
@@ -16,35 +16,37 @@ class RB205_RscGroupDialog
             colorBackground[] = {0,0,0,0.85};
         };
 
-        class Header: RscText
+        class Header: RB205_BFT_RscText
         {
             idc = -1;
-            text = "Gruppen";
+            text = "Squadübersicht";
             x = 0.28 * safezoneW + safezoneX;
             y = 0.17 * safezoneH + safezoneY;
             w = 0.44 * safezoneW;
             h = 0.03 * safezoneH;
-            colorBackground[] = {0.6,0,0,1};
+            colorBackground[] = {0.41569,0.05882,0.05882,1};   
         };
     };
 
     class Controls
     {
-        class GroupList: RscListBox
+        class GroupList: RB205_BFT_RscListNBox
         {
-            idc = 205501;
+            idc = 205551;
 
             x = 0.295 * safezoneW + safezoneX;
             y = 0.22 * safezoneH + safezoneY;
             w = 0.14 * safezoneW;
             h = 0.48 * safezoneH;
 
-            onLBSelChanged = "_this call RB205_fnc_groupSelected;";
+            columns[] = {-0.01,0.9};
+
+            onLBSelChanged = "_this call RB205_BFT_fnc_onSelectGroup;";
         };
 
-        class MemberText: RscStructuredText
+        class MemberText: RB205_BFT_StructuredText
         {
-            idc = 205502;
+            idc = 205552;
 
             x = 0.45 * safezoneW + safezoneX;
             y = 0.22 * safezoneH + safezoneY;
@@ -55,7 +57,20 @@ class RB205_RscGroupDialog
             colorBackground[] = {0.1,0.1,0.1,0.6};
         };
 
-        class CloseButton: RscButton
+        class JoinButton: RB205_BFT_RscButton
+        {
+            idc = 205553;
+
+            text = "Beitreten";
+
+            x = 0.45 * safezoneW + safezoneX;
+            y = 0.71 * safezoneH + safezoneY;
+            w = 0.105 * safezoneW;
+            h = 0.035 * safezoneH;
+            onButtonClick = "_this call RB205_BFT_fnc_onBtnClickJoin;";
+        };
+
+        class CloseButton: RB205_BFT_RscButton
         {
             idc = -1;
 
