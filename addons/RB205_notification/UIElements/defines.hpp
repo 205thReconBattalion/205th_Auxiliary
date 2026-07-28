@@ -14,6 +14,8 @@
 #define TEXT_W              (HINTERGRUND_W * 0.7867)
 #define TEXT_H              (HINTERGRUND_H * 0.5)
 
+#define STANDARD_TEXT_FARBE "#2EB8FF"
+
 
 class RB205notification_RscPicture
 {
@@ -53,7 +55,7 @@ class RB205notification_RscText
     class Attributes
     {
         font = "EtelkaMonospacePro";
-        color = "#08749C";          
+        color = STANDARD_TEXT_FARBE;          
         align = "center";
         valign = "middle";
         shadow = 2;
