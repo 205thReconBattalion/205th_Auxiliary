@@ -18,6 +18,7 @@ class CfgFunctions
 		{
 			file = "\RB205_notification\functions";
 			class openDialog{};
+			class openDialogSlow{};
 		};
 	};
 };
