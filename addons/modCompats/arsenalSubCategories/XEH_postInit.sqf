@@ -3,6 +3,7 @@
         "JLTS_credits_10","JLTS_credits_50","JLTS_credits_100","JLTS_credits_500","JLTS_credits_1000","JLTS_credits_5000",
         "JLTS_flan_10","JLTS_flan_50","JLTS_flan_100","JLTS_flan_500","JLTS_flan_1000","JLTS_flan_5000",
         "JLTS_credit_card","3AS_Intel_CreditCase",
+        "SFA_Sabacc_Credit",
 
         "JLTS_ids_license_weapon_primary","JLTS_ids_license_weapon_secondary","JLTS_ids_license_driver_large","JLTS_ids_license_driver_medium","JLTS_ids_license_driver_small",
         "JLTS_ids_rep_civ","RB205_ids_cis_civ","RB205_ids_neutral_civ","JLTS_ids_police",
@@ -10,7 +11,7 @@
         "RB205_ids_cis_diplomat",
         
         "JLTS_intel_datacard","3AS_Intel_DataChip","3AS_Intel_DataPad","P_Datapad","JLTS_scanner_police","JLTS_intel_datapad_civ","JLTS_intel_holoProjector",
-        "JLTS_scanner_bounty","JLTS_intel_bountypuck","JLTS_intel_trackingFob",
+        "JLTS_scanner_bounty","JLTS_intel_bountypuck","JLTS_intel_trackingFob","JLTS_intel_briefcase",
         "JLTS_intel_lightsaber_01","JLTS_intel_holocron_jedi","JLTS_intel_holocron_sith","3AS_Holocron_Cube","3AS_Holocron_Cube_Green","3AS_Holocron_Pyramid_Purple","3AS_Holocron_Pyramid",
 
         "JLTS_pazaak_deck","JLTS_sabacc_deck","JLTS_icecream",
