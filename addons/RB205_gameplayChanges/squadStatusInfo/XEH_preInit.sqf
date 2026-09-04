@@ -16,7 +16,7 @@ Parameters:
     "RB205_GC_SSI_Active",
     "CHECKBOX",
     ["Enable Squad Size Info Markers","Aktiviere Markierungen auf der Karte, die die aktuelle Anzahl an Squad-Mitgliedern anzeigen."],
-    ["205th Recon Battalion", "Miscellaneous"],
+    "[205] Miscellaneous",
     true,
     0,
     {},
